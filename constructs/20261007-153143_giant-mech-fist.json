@@ -1,0 +1,123 @@
+{
+  "animations": [
+    {
+      "duration": 5,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            -20,
+            0,
+            -10
+          ]
+        },
+        {
+          "t": 0.6,
+          "value": [
+            -23,
+            40,
+            -7
+          ]
+        }
+      ],
+      "loop": "repeat",
+      "part": "finger_root",
+      "phase": 0.5,
+      "property": "rotation"
+    }
+  ],
+  "forge": {
+    "duration": 8,
+    "ringPosition": [
+      5,
+      15,
+      -20
+    ]
+  },
+  "notes": "Based on research, a mech fist design with proportions around an 8m forearm length.",
+  "parts": [
+    {
+      "build": {
+        "order": 1
+      },
+      "id": "hand_root",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.5,
+          1,
+          0.3
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "armor_hand",
+      "intensity": 2,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "position": [
+        0,
+        -1,
+        0
+      ],
+      "rotation": [
+        90,
+        30,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.75,
+          6,
+          2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "finger_root",
+      "offset": [
+        -0.8,
+        -1.25,
+        0
+      ],
+      "position": [
+        4,
+        -7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          1,
+          3,
+          0.5
+        ],
+        "type": "box"
+      }
+    }
+  ],
+  "title": "Giant Mech Fist",
+  "version": 1,
+  "id": "20261007-153143_giant-mech-fist",
+  "prompt": "a giant mech fist"
+}

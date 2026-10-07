@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emerald-ring.local/scene.schema.json",
+  "title": "Emerald Ring scene spec",
+  "description": "A hard-light construct. Y is up, ground is y=0, units are roughly metres, rotations are in degrees (Euler XYZ). Each part's position is its joint (pivot), relative to its parent's joint.",
+  "type": "object",
+  "required": ["version", "title", "parts"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "prompt": { "type": "string" },
+    "notes": { "type": "string" },
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+        "opacity": { "type": "number", "minimum": 0.05, "maximum": 1 },
+        "rim": { "type": "number", "minimum": 0, "maximum": 3 },
+        "edgeGlow": { "type": "number", "minimum": 0, "maximum": 3 }
+      }
+    },
+    "parts": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 200,
+      "items": { "$ref": "#/$defs/part" }
+    },
+    "animations": {
+      "type": "array",
+      "maxItems": 100,
+      "items": { "$ref": "#/$defs/animation" }
+    },
+    "forge": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "duration": { "type": "number", "minimum": 1, "maximum": 30 },
+        "ringPosition": { "$ref": "#/$defs/vec3" }
+      }
+    }
+  },
+
+  "$defs": {
+    "vec2": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 },
+    "vec3": { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 },
+    "posVec3": {
+      "type": "array",
+      "items": { "type": "number", "exclusiveMinimum": 0 },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "positive": { "type": "number", "exclusiveMinimum": 0 },
+    "segments": { "type": "integer", "minimum": 3, "maximum": 64 },
+
+    "part": {
+      "type": "object",
+      "required": ["id", "shape", "position"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "parent": { "type": ["string", "null"] },
+        "label": { "type": "string" },
+        "shape": { "$ref": "#/$defs/shape" },
+        "position": { "$ref": "#/$defs/vec3", "description": "Joint position relative to the parent's joint." },
+        "rotation": { "$ref": "#/$defs/vec3", "description": "Degrees, Euler XYZ, applied at the joint; children inherit it." },
+        "scale": { "$ref": "#/$defs/posVec3", "description": "Stretches this part's own geometry only; children are NOT scaled." },
+        "offset": { "$ref": "#/$defs/vec3", "description": "Geometry offset from the joint, so the part pivots at one end." },
+        "build": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { "order": { "type": "integer", "minimum": 0, "maximum": 100 } }
+        },
+        "intensity": { "type": "number", "minimum": 0, "maximum": 4 }
+      }
+    },
+
+    "shape": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "enum": ["box", "sphere", "cylinder", "cone", "torus", "tube", "extrude", "group"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "box" } } },
+          "then": {
+            "required": ["size"],
+            "properties": { "type": true, "size": { "$ref": "#/$defs/posVec3" } },
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "sphere" } } },
+          "then": {
+            "required": ["radius"],
+            "properties": { "type": true, "radius": { "$ref": "#/$defs/positive" }, "segments": { "$ref": "#/$defs/segments" } },
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "cylinder" } } },
+          "then": {
+            "required": ["radiusTop", "radiusBottom", "height"],
+            "properties": {
+              "type": true,
+              "radiusTop": { "type": "number", "minimum": 0 },
+              "radiusBottom": { "type": "number", "minimum": 0 },
+              "height": { "$ref": "#/$defs/positive" },
+              "segments": { "$ref": "#/$defs/segments" }
+            },
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "cone" } } },
+          "then": {
+            "required": ["radius", "height"],
+            "properties": {
+              "type": true,
+              "radius": { "$ref": "#/$defs/positive" },
+              "height": { "$ref": "#/$defs/positive" },
+              "segments": { "$ref": "#/$defs/segments" }
+            },
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "torus" } } },
+          "then": {
+            "required": ["radius", "tube"],
+            "properties": {
+              "type": true,
+              "radius": { "$ref": "#/$defs/positive" },
+              "tube": { "$ref": "#/$defs/positive" },
+              "arc": { "type": "number", "exclusiveMinimum": 0, "maximum": 360 }
+            },
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "tube" } } },
+          "then": {
+            "required": ["points", "radius"],
+            "properties": {
+              "type": true,
+              "points": { "type": "array", "items": { "$ref": "#/$defs/vec3" }, "minItems": 2, "maxItems": 64 },
+              "radius": { "$ref": "#/$defs/positive" },
+              "closed": { "type": "boolean" }
+            },
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "extrude" } } },
+          "then": {
+            "required": ["outline", "depth"],
+            "properties": {
+              "type": true,
+              "outline": { "type": "array", "items": { "$ref": "#/$defs/vec2" }, "minItems": 3, "maxItems": 64 },
+              "depth": { "$ref": "#/$defs/positive" },
+              "bevel": { "type": "number", "minimum": 0 }
+            },
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "group" } } },
+          "then": { "properties": { "type": true }, "additionalProperties": false }
+        }
+      ]
+    },
+
+    "animation": {
+      "type": "object",
+      "required": ["part", "property", "duration", "keyframes"],
+      "additionalProperties": false,
+      "description": "Keyframe values are offsets from the rest pose: added for position/rotation, multiplied for scale. Animated scale applies at the joint, so it affects children.",
+      "properties": {
+        "part": { "type": "string" },
+        "property": { "enum": ["position", "rotation", "scale"] },
+        "duration": { "type": "number", "exclusiveMinimum": 0, "maximum": 60 },
+        "loop": { "enum": ["repeat", "pingpong"] },
+        "easing": { "enum": ["linear", "sine", "quad", "cubic"] },
+        "phase": { "type": "number", "minimum": 0, "maximum": 1 },
+        "keyframes": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 32,
+          "items": {
+            "type": "object",
+            "required": ["t", "value"],
+            "additionalProperties": false,
+            "properties": {
+              "t": { "type": "number", "minimum": 0, "maximum": 1 },
+              "value": { "$ref": "#/$defs/vec3" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

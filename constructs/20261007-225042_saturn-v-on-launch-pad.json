@@ -1,0 +1,353 @@
+{
+  "animations": [
+    {
+      "duration": 1.5,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "instrument",
+      "property": "scale"
+    },
+    {
+      "duration": 3,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            -5
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            5
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "arm_l",
+      "property": "rotation"
+    },
+    {
+      "duration": 3,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            -5
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            5
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "arm_r",
+      "phase": 0.5,
+      "property": "rotation"
+    }
+  ],
+  "forge": {
+    "duration": 8
+  },
+  "parts": [
+    {
+      "build": {
+        "order": 1
+      },
+      "id": "pad_base",
+      "position": [
+        0,
+        0.1,
+        0
+      ],
+      "shape": {
+        "size": [
+          2,
+          0.2,
+          2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "tower",
+      "position": [
+        -0.7,
+        2.5,
+        0
+      ],
+      "shape": {
+        "height": 5,
+        "radiusBottom": 0.15,
+        "radiusTop": 0.15,
+        "segments": 12,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "arm_l",
+      "offset": [
+        0,
+        0,
+        0.6
+      ],
+      "position": [
+        -0.7,
+        4.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        15
+      ],
+      "shape": {
+        "size": [
+          0.1,
+          0.1,
+          1.2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "arm_r",
+      "offset": [
+        0,
+        0,
+        -0.6
+      ],
+      "position": [
+        -0.7,
+        4.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -15
+      ],
+      "shape": {
+        "size": [
+          0.1,
+          0.1,
+          1.2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "rocket",
+      "position": [
+        0,
+        0.1,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "stage1",
+      "offset": [
+        0,
+        2.25,
+        0
+      ],
+      "parent": "rocket",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "height": 4.5,
+        "radiusBottom": 0.45,
+        "radiusTop": 0.45,
+        "segments": 12,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "stage2",
+      "offset": [
+        0,
+        1.25,
+        0
+      ],
+      "parent": "rocket",
+      "position": [
+        0,
+        4.5,
+        0
+      ],
+      "shape": {
+        "height": 2.5,
+        "radiusBottom": 0.35,
+        "radiusTop": 0.35,
+        "segments": 12,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "stage3",
+      "offset": [
+        0,
+        1,
+        0
+      ],
+      "parent": "rocket",
+      "position": [
+        0,
+        7,
+        0
+      ],
+      "shape": {
+        "height": 2,
+        "radiusBottom": 0.3,
+        "radiusTop": 0.3,
+        "segments": 12,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "instrument",
+      "intensity": 2.5,
+      "offset": [
+        0,
+        0.15,
+        0
+      ],
+      "parent": "rocket",
+      "position": [
+        0,
+        9,
+        0
+      ],
+      "shape": {
+        "height": 0.3,
+        "radiusBottom": 0.35,
+        "radiusTop": 0.35,
+        "segments": 12,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "payload",
+      "offset": [
+        0,
+        0.4,
+        0
+      ],
+      "parent": "rocket",
+      "position": [
+        0,
+        9.3,
+        0
+      ],
+      "shape": {
+        "radius": 0.4,
+        "segments": 12,
+        "type": "sphere"
+      }
+    },
+    {
+      "build": {
+        "order": 6
+      },
+      "id": "launch_light_l",
+      "intensity": 3,
+      "parent": "tower",
+      "position": [
+        -0.7,
+        4.8,
+        0.4
+      ],
+      "shape": {
+        "radius": 0.07,
+        "segments": 8,
+        "type": "sphere"
+      }
+    },
+    {
+      "build": {
+        "order": 6
+      },
+      "id": "launch_light_r",
+      "intensity": 3,
+      "parent": "tower",
+      "position": [
+        -0.7,
+        4.8,
+        -0.4
+      ],
+      "shape": {
+        "radius": 0.07,
+        "segments": 8,
+        "type": "sphere"
+      }
+    }
+  ],
+  "title": "Saturn V on Launch Pad",
+  "version": 1,
+  "id": "20261007-225042_saturn-v-on-launch-pad",
+  "prompt": "a Saturn V rocket on its launch pad"
+}

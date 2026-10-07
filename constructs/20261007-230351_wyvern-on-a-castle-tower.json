@@ -1,0 +1,914 @@
+{
+  "version": 1,
+  "title": "Wyvern on a Castle Tower",
+  "parts": [
+    {
+      "id": "tower",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 1.2,
+        "radiusBottom": 1.4,
+        "height": 5,
+        "segments": 8
+      },
+      "position": [
+        0,
+        2.5,
+        0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "tower_top",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 1.5,
+        "radiusBottom": 1.5,
+        "height": 0.4,
+        "segments": 8
+      },
+      "position": [
+        0,
+        5.2,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "merlon1",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "position": [
+        1.2,
+        5.65,
+        0
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "merlon2",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "position": [
+        -1.2,
+        5.65,
+        0
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "merlon3",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "position": [
+        0,
+        5.65,
+        1.2
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "merlon4",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "position": [
+        0,
+        5.65,
+        -1.2
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "door",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            -0.4,
+            0
+          ],
+          [
+            0.4,
+            0
+          ],
+          [
+            0.4,
+            1.2
+          ],
+          [
+            0,
+            1.6
+          ],
+          [
+            -0.4,
+            1.2
+          ]
+        ],
+        "depth": 0.1
+      },
+      "position": [
+        0,
+        0,
+        1.38
+      ],
+      "build": {
+        "order": 10
+      },
+      "intensity": 1.5
+    },
+    {
+      "id": "window",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.25,
+          0.6,
+          0.1
+        ]
+      },
+      "position": [
+        0,
+        3.5,
+        1.28
+      ],
+      "build": {
+        "order": 10
+      },
+      "intensity": 2
+    },
+    {
+      "id": "wyv",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        5.4,
+        0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "body",
+      "parent": "wyv",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.6,
+        "segments": 10
+      },
+      "position": [
+        0,
+        0.9,
+        0
+      ],
+      "rotation": [
+        -20,
+        0,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        1.4
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "leg_l",
+      "parent": "wyv",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.15,
+        "radiusBottom": 0.08,
+        "height": 0.8,
+        "segments": 6
+      },
+      "position": [
+        0.35,
+        0.75,
+        0.1
+      ],
+      "offset": [
+        0,
+        -0.4,
+        0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "leg_r",
+      "parent": "wyv",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.15,
+        "radiusBottom": 0.08,
+        "height": 0.8,
+        "segments": 6
+      },
+      "position": [
+        -0.35,
+        0.75,
+        0.1
+      ],
+      "offset": [
+        0,
+        -0.4,
+        0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "foot_l",
+      "parent": "wyv",
+      "shape": {
+        "type": "cone",
+        "radius": 0.15,
+        "height": 0.4,
+        "segments": 6
+      },
+      "position": [
+        0.35,
+        0.06,
+        0.25
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 35
+      }
+    },
+    {
+      "id": "foot_r",
+      "parent": "wyv",
+      "shape": {
+        "type": "cone",
+        "radius": 0.15,
+        "height": 0.4,
+        "segments": 6
+      },
+      "position": [
+        -0.35,
+        0.06,
+        0.25
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 35
+      }
+    },
+    {
+      "id": "neck",
+      "parent": "wyv",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        1.2,
+        0.6
+      ],
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "neck_m",
+      "parent": "neck",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0.5,
+            0.2
+          ],
+          [
+            0,
+            0.9,
+            0.5
+          ]
+        ],
+        "radius": 0.16
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "head",
+      "parent": "neck",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0.95,
+        0.55
+      ],
+      "build": {
+        "order": 45
+      }
+    },
+    {
+      "id": "skull",
+      "parent": "head",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.35,
+          0.3,
+          0.5
+        ]
+      },
+      "position": [
+        0,
+        0,
+        0.1
+      ],
+      "build": {
+        "order": 45
+      }
+    },
+    {
+      "id": "snout",
+      "parent": "head",
+      "shape": {
+        "type": "cone",
+        "radius": 0.15,
+        "height": 0.5,
+        "segments": 6
+      },
+      "position": [
+        0,
+        -0.05,
+        0.55
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "horn_l",
+      "parent": "head",
+      "shape": {
+        "type": "cone",
+        "radius": 0.05,
+        "height": 0.4,
+        "segments": 6
+      },
+      "position": [
+        0.12,
+        0.2,
+        -0.1
+      ],
+      "rotation": [
+        -60,
+        0,
+        0
+      ],
+      "build": {
+        "order": 60
+      }
+    },
+    {
+      "id": "horn_r",
+      "parent": "head",
+      "shape": {
+        "type": "cone",
+        "radius": 0.05,
+        "height": 0.4,
+        "segments": 6
+      },
+      "position": [
+        -0.12,
+        0.2,
+        -0.1
+      ],
+      "rotation": [
+        -60,
+        0,
+        0
+      ],
+      "build": {
+        "order": 60
+      }
+    },
+    {
+      "id": "eye_l",
+      "parent": "head",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.05,
+        "segments": 6
+      },
+      "position": [
+        0.17,
+        0.06,
+        0.2
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 60
+      }
+    },
+    {
+      "id": "eye_r",
+      "parent": "head",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.05,
+        "segments": 6
+      },
+      "position": [
+        -0.17,
+        0.06,
+        0.2
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 60
+      }
+    },
+    {
+      "id": "tail",
+      "parent": "wyv",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -0.3,
+            -0.6
+          ],
+          [
+            0.4,
+            -0.9,
+            -1.1
+          ],
+          [
+            0.9,
+            -1.6,
+            -1
+          ],
+          [
+            1.2,
+            -2.3,
+            -0.5
+          ]
+        ],
+        "radius": 0.12
+      },
+      "position": [
+        0,
+        0.7,
+        -0.7
+      ],
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "tail_tip",
+      "parent": "tail",
+      "shape": {
+        "type": "cone",
+        "radius": 0.15,
+        "height": 0.35,
+        "segments": 4
+      },
+      "position": [
+        1.25,
+        -2.45,
+        -0.45
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "build": {
+        "order": 60
+      },
+      "intensity": 1.5
+    },
+    {
+      "id": "wing_l",
+      "parent": "wyv",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0.4,
+        1.2,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        20
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "wing_l_m",
+      "parent": "wing_l",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1.2,
+            0.8
+          ],
+          [
+            2.6,
+            0.6
+          ],
+          [
+            2.2,
+            0
+          ],
+          [
+            1.8,
+            -0.3
+          ],
+          [
+            1.4,
+            -0.1
+          ],
+          [
+            1,
+            -0.5
+          ],
+          [
+            0.5,
+            -0.4
+          ]
+        ],
+        "depth": 0.04
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "wing_l_bone",
+      "parent": "wing_l",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1.2,
+            0,
+            -0.8
+          ],
+          [
+            2.6,
+            0,
+            -0.6
+          ]
+        ],
+        "radius": 0.06
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "wing_r",
+      "parent": "wyv",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        -0.4,
+        1.2,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        -20
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "wing_r_m",
+      "parent": "wing_r",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            -1.2,
+            0.8
+          ],
+          [
+            -2.6,
+            0.6
+          ],
+          [
+            -2.2,
+            0
+          ],
+          [
+            -1.8,
+            -0.3
+          ],
+          [
+            -1.4,
+            -0.1
+          ],
+          [
+            -1,
+            -0.5
+          ],
+          [
+            -0.5,
+            -0.4
+          ]
+        ],
+        "depth": 0.04
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "wing_r_bone",
+      "parent": "wing_r",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1.2,
+            0,
+            -0.8
+          ],
+          [
+            -2.6,
+            0,
+            -0.6
+          ]
+        ],
+        "radius": 0.06
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 50
+      }
+    }
+  ],
+  "animations": [
+    {
+      "part": "wing_l",
+      "property": "rotation",
+      "duration": 2.4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            -15
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "part": "wing_r",
+      "property": "rotation",
+      "duration": 2.4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            15
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            -25
+          ]
+        }
+      ]
+    },
+    {
+      "part": "head",
+      "property": "rotation",
+      "duration": 4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -25,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            10,
+            25,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "tail",
+      "property": "rotation",
+      "duration": 3,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -10,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            10,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "body",
+      "property": "scale",
+      "duration": 2,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.05,
+            1.05,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "forge": {
+    "duration": 8
+  },
+  "id": "20261007-230351_wyvern-on-a-castle-tower",
+  "prompt": "a wyvern perched on a castle tower"
+}

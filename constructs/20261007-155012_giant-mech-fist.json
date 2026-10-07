@@ -1,0 +1,466 @@
+{
+  "animations": [
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "core",
+      "phase": 0,
+      "property": "scale"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            -30,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -50,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "thumb_g",
+      "phase": 0,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            30,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "finger1_g",
+      "phase": 0,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            35,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "finger2_g",
+      "phase": 0.1,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            32,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "finger3_g",
+      "phase": 0.2,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            28,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "finger4_g",
+      "phase": 0.3,
+      "property": "rotation"
+    }
+  ],
+  "forge": {
+    "duration": 8
+  },
+  "parts": [
+    {
+      "build": {
+        "order": 0
+      },
+      "id": "fist",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 10
+      },
+      "id": "wrist",
+      "parent": "fist",
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "shape": {
+        "size": [
+          1,
+          1,
+          1
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 20
+      },
+      "id": "palm_g",
+      "parent": "fist",
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 20
+      },
+      "id": "palm",
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "parent": "palm_g",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          2,
+          0.5,
+          2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 30
+      },
+      "id": "core",
+      "intensity": 2.5,
+      "parent": "palm_g",
+      "position": [
+        0,
+        0.25,
+        0
+      ],
+      "shape": {
+        "radius": 0.2,
+        "segments": 6,
+        "type": "sphere"
+      }
+    },
+    {
+      "build": {
+        "order": 40
+      },
+      "id": "thumb_g",
+      "parent": "palm_g",
+      "position": [
+        -0.8,
+        0,
+        0.8
+      ],
+      "rotation": [
+        -30,
+        0,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 40
+      },
+      "id": "thumb",
+      "offset": [
+        0,
+        0.35,
+        0
+      ],
+      "parent": "thumb_g",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.5,
+          0.7,
+          0.3
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 50
+      },
+      "id": "finger1_g",
+      "parent": "palm_g",
+      "position": [
+        0.6,
+        0,
+        0.4
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 50
+      },
+      "id": "finger1",
+      "offset": [
+        0,
+        0.6,
+        0
+      ],
+      "parent": "finger1_g",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.3,
+          1.2,
+          0.3
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 50
+      },
+      "id": "finger2_g",
+      "parent": "palm_g",
+      "position": [
+        0.6,
+        0,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 50
+      },
+      "id": "finger2",
+      "offset": [
+        0,
+        0.7,
+        0
+      ],
+      "parent": "finger2_g",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.3,
+          1.4,
+          0.3
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 50
+      },
+      "id": "finger3_g",
+      "parent": "palm_g",
+      "position": [
+        0.6,
+        0,
+        -0.4
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 50
+      },
+      "id": "finger3",
+      "offset": [
+        0,
+        0.65,
+        0
+      ],
+      "parent": "finger3_g",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.3,
+          1.3,
+          0.3
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 50
+      },
+      "id": "finger4_g",
+      "parent": "palm_g",
+      "position": [
+        0.6,
+        0,
+        -0.8
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 50
+      },
+      "id": "finger4",
+      "offset": [
+        0,
+        0.55,
+        0
+      ],
+      "parent": "finger4_g",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.3,
+          1.1,
+          0.3
+        ],
+        "type": "box"
+      }
+    }
+  ],
+  "title": "Giant Mech Fist",
+  "version": 1,
+  "id": "20261007-155012_giant-mech-fist",
+  "prompt": "a giant mech fist"
+}

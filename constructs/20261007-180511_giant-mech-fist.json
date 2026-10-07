@@ -1,0 +1,767 @@
+{
+  "animations": [
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -70,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "finger1",
+      "phase": 0,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -70,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "finger2",
+      "phase": 0.25,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -70,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "finger3",
+      "phase": 0.5,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -70,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "finger4",
+      "phase": 0.75,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            -30
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -45,
+            0,
+            -30
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "thumb",
+      "phase": 0.5,
+      "property": "rotation"
+    },
+    {
+      "duration": 1.5,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "core",
+      "property": "scale"
+    }
+  ],
+  "forge": {
+    "duration": 8
+  },
+  "parts": [
+    {
+      "build": {
+        "order": 1
+      },
+      "id": "wrist",
+      "position": [
+        0,
+        0.6,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.8,
+          1.2,
+          0.8
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "palm",
+      "parent": "wrist",
+      "position": [
+        0,
+        0.9,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "palm_plate",
+      "parent": "palm",
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "shape": {
+        "size": [
+          2.2,
+          0.4,
+          1.2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "core",
+      "intensity": 3,
+      "parent": "palm",
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "shape": {
+        "radius": 0.3,
+        "segments": 8,
+        "type": "sphere"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "knuckle_l",
+      "intensity": 1.5,
+      "parent": "palm",
+      "position": [
+        -0.6,
+        0.2,
+        0.6
+      ],
+      "shape": {
+        "radius": 0.18,
+        "segments": 8,
+        "type": "sphere"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "knuckle_ml",
+      "intensity": 1.5,
+      "parent": "palm",
+      "position": [
+        -0.2,
+        0.2,
+        0.6
+      ],
+      "shape": {
+        "radius": 0.18,
+        "segments": 8,
+        "type": "sphere"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "knuckle_mr",
+      "intensity": 1.5,
+      "parent": "palm",
+      "position": [
+        0.2,
+        0.2,
+        0.6
+      ],
+      "shape": {
+        "radius": 0.18,
+        "segments": 8,
+        "type": "sphere"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "knuckle_r",
+      "intensity": 1.5,
+      "parent": "palm",
+      "position": [
+        0.6,
+        0.2,
+        0.6
+      ],
+      "shape": {
+        "radius": 0.18,
+        "segments": 8,
+        "type": "sphere"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "finger1",
+      "parent": "palm",
+      "position": [
+        -0.6,
+        0.2,
+        0.6
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger1_prox",
+      "offset": [
+        0,
+        -0.3,
+        0
+      ],
+      "parent": "finger1",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.25,
+          0.6,
+          0.25
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger1_mid",
+      "offset": [
+        0,
+        -0.25,
+        0
+      ],
+      "parent": "finger1_prox",
+      "position": [
+        0,
+        -0.6,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.22,
+          0.5,
+          0.22
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger1_tip",
+      "offset": [
+        0,
+        -0.2,
+        0
+      ],
+      "parent": "finger1_mid",
+      "position": [
+        0,
+        -0.5,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.2,
+          0.4,
+          0.2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "finger2",
+      "parent": "palm",
+      "position": [
+        -0.2,
+        0.2,
+        0.6
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger2_prox",
+      "offset": [
+        0,
+        -0.3,
+        0
+      ],
+      "parent": "finger2",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.25,
+          0.6,
+          0.25
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger2_mid",
+      "offset": [
+        0,
+        -0.25,
+        0
+      ],
+      "parent": "finger2_prox",
+      "position": [
+        0,
+        -0.6,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.22,
+          0.5,
+          0.22
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger2_tip",
+      "offset": [
+        0,
+        -0.2,
+        0
+      ],
+      "parent": "finger2_mid",
+      "position": [
+        0,
+        -0.5,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.2,
+          0.4,
+          0.2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "finger3",
+      "parent": "palm",
+      "position": [
+        0.2,
+        0.2,
+        0.6
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger3_prox",
+      "offset": [
+        0,
+        -0.3,
+        0
+      ],
+      "parent": "finger3",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.25,
+          0.6,
+          0.25
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger3_mid",
+      "offset": [
+        0,
+        -0.25,
+        0
+      ],
+      "parent": "finger3_prox",
+      "position": [
+        0,
+        -0.6,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.22,
+          0.5,
+          0.22
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger3_tip",
+      "offset": [
+        0,
+        -0.2,
+        0
+      ],
+      "parent": "finger3_mid",
+      "position": [
+        0,
+        -0.5,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.2,
+          0.4,
+          0.2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "finger4",
+      "parent": "palm",
+      "position": [
+        0.6,
+        0.2,
+        0.6
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger4_prox",
+      "offset": [
+        0,
+        -0.3,
+        0
+      ],
+      "parent": "finger4",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.25,
+          0.6,
+          0.25
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger4_mid",
+      "offset": [
+        0,
+        -0.25,
+        0
+      ],
+      "parent": "finger4_prox",
+      "position": [
+        0,
+        -0.6,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.22,
+          0.5,
+          0.22
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "finger4_tip",
+      "offset": [
+        0,
+        -0.2,
+        0
+      ],
+      "parent": "finger4_mid",
+      "position": [
+        0,
+        -0.5,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.2,
+          0.4,
+          0.2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "thumb",
+      "parent": "palm",
+      "position": [
+        -0.9,
+        0.15,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        -30
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "thumb_prox",
+      "offset": [
+        0,
+        -0.2,
+        0
+      ],
+      "parent": "thumb",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.2,
+          0.4,
+          0.2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "thumb_mid",
+      "offset": [
+        0,
+        -0.175,
+        0
+      ],
+      "parent": "thumb_prox",
+      "position": [
+        0,
+        -0.4,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.18,
+          0.35,
+          0.18
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "thumb_tip",
+      "offset": [
+        0,
+        -0.15,
+        0
+      ],
+      "parent": "thumb_mid",
+      "position": [
+        0,
+        -0.35,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.15,
+          0.3,
+          0.15
+        ],
+        "type": "box"
+      }
+    }
+  ],
+  "title": "Giant Mech Fist",
+  "version": 1,
+  "id": "20261007-180511_giant-mech-fist",
+  "prompt": "a giant mech fist"
+}

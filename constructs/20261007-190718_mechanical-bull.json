@@ -1,0 +1,595 @@
+{
+  "version": 1,
+  "title": "Mechanical Bull",
+  "parts": [
+    {
+      "id": "base",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 1.6,
+        "radiusBottom": 1.8,
+        "height": 0.3,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0.15,
+        0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "mat",
+      "shape": {
+        "type": "torus",
+        "radius": 2.2,
+        "tube": 0.12
+      },
+      "position": [
+        0,
+        0.12,
+        0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "post",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.25,
+        "radiusBottom": 0.35,
+        "height": 0.8,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0.7,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "piston",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.15,
+        "radiusBottom": 0.15,
+        "height": 0.5,
+        "segments": 8
+      },
+      "position": [
+        0,
+        1.2,
+        0
+      ],
+      "build": {
+        "order": 1
+      },
+      "intensity": 1.5
+    },
+    {
+      "id": "pivot",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.3,
+        "segments": 8
+      },
+      "position": [
+        0,
+        1.45,
+        0
+      ],
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "body",
+      "parent": "pivot",
+      "shape": {
+        "type": "sphere",
+        "radius": 1
+      },
+      "position": [
+        0,
+        0.55,
+        0
+      ],
+      "scale": [
+        1.5,
+        0.6,
+        0.65
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "hump",
+      "parent": "body",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.55
+      },
+      "position": [
+        0.65,
+        0.3,
+        0
+      ],
+      "scale": [
+        1,
+        0.8,
+        1
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "saddle",
+      "parent": "body",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.7,
+          0.12,
+          0.9
+        ]
+      },
+      "position": [
+        -0.1,
+        0.6,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "horn_l",
+      "parent": "body",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0.15,
+            0.35
+          ],
+          [
+            0.15,
+            0.4,
+            0.55
+          ]
+        ],
+        "radius": 0.06
+      },
+      "position": [
+        1.9,
+        0.45,
+        0.15
+      ],
+      "build": {
+        "order": 7
+      },
+      "intensity": 2
+    },
+    {
+      "id": "horn_r",
+      "parent": "body",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0.15,
+            -0.35
+          ],
+          [
+            0.15,
+            0.4,
+            -0.55
+          ]
+        ],
+        "radius": 0.06
+      },
+      "position": [
+        1.9,
+        0.45,
+        -0.15
+      ],
+      "build": {
+        "order": 7
+      },
+      "intensity": 2
+    },
+    {
+      "id": "head",
+      "parent": "body",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.6,
+          0.55,
+          0.5
+        ]
+      },
+      "position": [
+        1.85,
+        0.15,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -20
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "snout",
+      "parent": "head",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.35,
+          0.45
+        ]
+      },
+      "position": [
+        0.35,
+        -0.15,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "eye_l",
+      "parent": "head",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.06
+      },
+      "position": [
+        0.2,
+        0.1,
+        0.26
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "eye_r",
+      "parent": "head",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.06
+      },
+      "position": [
+        0.2,
+        0.1,
+        -0.26
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "leg_fl",
+      "parent": "body",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.14,
+        "radiusBottom": 0.1,
+        "height": 0.7,
+        "segments": 6
+      },
+      "position": [
+        1,
+        -0.4,
+        0.35
+      ],
+      "rotation": [
+        0,
+        0,
+        -40
+      ],
+      "offset": [
+        0,
+        -0.35,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "leg_fr",
+      "parent": "body",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.14,
+        "radiusBottom": 0.1,
+        "height": 0.7,
+        "segments": 6
+      },
+      "position": [
+        1,
+        -0.4,
+        -0.35
+      ],
+      "rotation": [
+        0,
+        0,
+        -40
+      ],
+      "offset": [
+        0,
+        -0.35,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "leg_bl",
+      "parent": "body",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.14,
+        "radiusBottom": 0.1,
+        "height": 0.7,
+        "segments": 6
+      },
+      "position": [
+        -1,
+        -0.4,
+        0.35
+      ],
+      "rotation": [
+        0,
+        0,
+        40
+      ],
+      "offset": [
+        0,
+        -0.35,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "leg_br",
+      "parent": "body",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.14,
+        "radiusBottom": 0.1,
+        "height": 0.7,
+        "segments": 6
+      },
+      "position": [
+        -1,
+        -0.4,
+        -0.35
+      ],
+      "rotation": [
+        0,
+        0,
+        40
+      ],
+      "offset": [
+        0,
+        -0.35,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "tail",
+      "parent": "body",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -0.3,
+            -0.2,
+            0
+          ],
+          [
+            -0.4,
+            -0.6,
+            0
+          ]
+        ],
+        "radius": 0.04
+      },
+      "position": [
+        -1.45,
+        0.2,
+        0
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "handle",
+      "parent": "body",
+      "shape": {
+        "type": "torus",
+        "radius": 0.15,
+        "tube": 0.03,
+        "arc": 180
+      },
+      "position": [
+        0.3,
+        0.62,
+        0
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "build": {
+        "order": 8
+      },
+      "intensity": 1.5
+    }
+  ],
+  "animations": [
+    {
+      "part": "pivot",
+      "property": "rotation",
+      "duration": 1.6,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            -8,
+            -25,
+            -12
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            8,
+            0,
+            10
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -6,
+            25,
+            -12
+          ]
+        }
+      ]
+    },
+    {
+      "part": "head",
+      "property": "rotation",
+      "duration": 0.8,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            -8
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "part": "tail",
+      "property": "rotation",
+      "duration": 1,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            -30,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            30,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "piston",
+      "property": "scale",
+      "duration": 0.8,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            0.9,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1,
+            1.1,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "forge": {
+    "duration": 7
+  },
+  "id": "20261007-190718_mechanical-bull",
+  "prompt": "a mechanical bull"
+}

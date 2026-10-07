@@ -1,0 +1,1063 @@
+{
+  "animations": [
+    {
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0.3
+        },
+        {
+          "value": [
+            0,
+            -65,
+            0
+          ],
+          "t": 0.7
+        },
+        {
+          "value": [
+            0,
+            -65,
+            0
+          ],
+          "t": 1
+        }
+      ],
+      "easing": "sine",
+      "part": "swing_arm1",
+      "property": "rotation",
+      "loop": "pingpong",
+      "duration": 4
+    },
+    {
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.3,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.7,
+          "value": [
+            0,
+            -65,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            -65,
+            0
+          ]
+        }
+      ],
+      "property": "rotation",
+      "easing": "sine",
+      "part": "swing_arm2",
+      "duration": 4,
+      "loop": "pingpong",
+      "phase": 0.1
+    },
+    {
+      "easing": "sine",
+      "duration": 4,
+      "phase": 0.2,
+      "property": "rotation",
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "t": 0.3,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.7,
+          "value": [
+            0,
+            -65,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            -65,
+            0
+          ]
+        }
+      ],
+      "part": "swing_arm3",
+      "loop": "pingpong"
+    },
+    {
+      "property": "position",
+      "easing": "linear",
+      "loop": "repeat",
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "t": 0.25,
+          "value": [
+            0.005,
+            0,
+            0.003
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            -0.003,
+            0.004,
+            -0.005
+          ]
+        },
+        {
+          "t": 0.75,
+          "value": [
+            0.002,
+            -0.003,
+            0.004
+          ]
+        },
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 1
+        }
+      ],
+      "duration": 0.15,
+      "part": "rocket_root"
+    },
+    {
+      "part": "plume",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "value": [
+            1.1,
+            1.3,
+            1.1
+          ],
+          "t": 1
+        }
+      ],
+      "property": "scale",
+      "loop": "pingpong",
+      "duration": 0.8,
+      "easing": "sine"
+    }
+  ],
+  "forge": {
+    "duration": 9,
+    "ringPosition": [
+      0,
+      5,
+      3
+    ]
+  },
+  "parts": [
+    {
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "id": "pad_base",
+      "build": {
+        "order": 0
+      },
+      "shape": {
+        "type": "box",
+        "size": [
+          3.2,
+          0.4,
+          2.4
+        ]
+      }
+    },
+    {
+      "shape": {
+        "radiusTop": 0.01,
+        "type": "cylinder",
+        "radiusBottom": 0.03,
+        "segments": 6,
+        "height": 1.2
+      },
+      "build": {
+        "order": 0
+      },
+      "position": [
+        1,
+        0.4,
+        0.8
+      ],
+      "id": "pad_mast1"
+    },
+    {
+      "position": [
+        1,
+        0.4,
+        -0.8
+      ],
+      "id": "pad_mast2",
+      "shape": {
+        "type": "cylinder",
+        "height": 1.2,
+        "radiusTop": 0.01,
+        "radiusBottom": 0.03,
+        "segments": 6
+      },
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "build": {
+        "order": 0
+      },
+      "shape": {
+        "type": "box",
+        "size": [
+          0.4,
+          0.4,
+          0.4
+        ]
+      },
+      "id": "pad_box1",
+      "position": [
+        0.8,
+        0.6,
+        0
+      ]
+    },
+    {
+      "id": "tower_root",
+      "position": [
+        -1.1,
+        0.4,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      },
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "parent": "tower_root",
+      "position": [
+        -0.25,
+        0,
+        0.25
+      ],
+      "build": {
+        "order": 1
+      },
+      "shape": {
+        "height": 9,
+        "radiusBottom": 0.04,
+        "segments": 6,
+        "type": "cylinder",
+        "radiusTop": 0.03
+      },
+      "id": "tower_p1"
+    },
+    {
+      "id": "tower_p2",
+      "build": {
+        "order": 1
+      },
+      "shape": {
+        "height": 9,
+        "radiusTop": 0.03,
+        "type": "cylinder",
+        "segments": 6,
+        "radiusBottom": 0.04
+      },
+      "position": [
+        0.25,
+        0,
+        0.25
+      ],
+      "parent": "tower_root"
+    },
+    {
+      "shape": {
+        "height": 9,
+        "radiusTop": 0.03,
+        "segments": 6,
+        "type": "cylinder",
+        "radiusBottom": 0.04
+      },
+      "position": [
+        -0.25,
+        0,
+        -0.25
+      ],
+      "build": {
+        "order": 1
+      },
+      "parent": "tower_root",
+      "id": "tower_p3"
+    },
+    {
+      "position": [
+        0.25,
+        0,
+        -0.25
+      ],
+      "build": {
+        "order": 1
+      },
+      "shape": {
+        "type": "cylinder",
+        "segments": 6,
+        "radiusBottom": 0.04,
+        "height": 9,
+        "radiusTop": 0.03
+      },
+      "id": "tower_p4",
+      "parent": "tower_root"
+    },
+    {
+      "id": "tower_plat1",
+      "build": {
+        "order": 2
+      },
+      "shape": {
+        "type": "box",
+        "size": [
+          0.6,
+          0.04,
+          0.6
+        ]
+      },
+      "position": [
+        0,
+        1.8,
+        0
+      ],
+      "parent": "tower_root"
+    },
+    {
+      "position": [
+        0,
+        4,
+        0
+      ],
+      "id": "tower_plat2",
+      "build": {
+        "order": 2
+      },
+      "parent": "tower_root",
+      "shape": {
+        "size": [
+          0.6,
+          0.04,
+          0.6
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "id": "tower_plat3",
+      "build": {
+        "order": 2
+      },
+      "position": [
+        0,
+        6.2,
+        0
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.6,
+          0.04,
+          0.6
+        ]
+      },
+      "parent": "tower_root"
+    },
+    {
+      "id": "tower_plat4",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.6,
+          0.04,
+          0.6
+        ]
+      },
+      "build": {
+        "order": 2
+      },
+      "position": [
+        0,
+        8.4,
+        0
+      ],
+      "parent": "tower_root"
+    },
+    {
+      "shape": {
+        "size": [
+          0.6,
+          0.06,
+          0.6
+        ],
+        "type": "box"
+      },
+      "build": {
+        "order": 2
+      },
+      "parent": "tower_root",
+      "id": "tower_plat5",
+      "position": [
+        0,
+        9,
+        0
+      ]
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "shape": {
+        "radiusBottom": 0.08,
+        "segments": 8,
+        "radiusTop": 0.08,
+        "type": "cylinder",
+        "height": 0.3
+      },
+      "position": [
+        0,
+        9,
+        0
+      ],
+      "id": "crane_base",
+      "parent": "tower_root"
+    },
+    {
+      "parent": "crane_base",
+      "position": [
+        0,
+        0.3,
+        0
+      ],
+      "build": {
+        "order": 3
+      },
+      "id": "crane_boom",
+      "shape": {
+        "size": [
+          1.3,
+          0.12,
+          0.12
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "parent": "tower_root",
+      "id": "swing_arm1",
+      "build": {
+        "order": 3
+      },
+      "shape": {
+        "type": "box",
+        "size": [
+          1.3,
+          0.08,
+          0.12
+        ]
+      },
+      "position": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "position": [
+        0,
+        5.8,
+        0
+      ],
+      "id": "swing_arm2",
+      "parent": "tower_root",
+      "build": {
+        "order": 3
+      },
+      "shape": {
+        "size": [
+          1.3,
+          0.08,
+          0.12
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "position": [
+        0,
+        8.1,
+        0
+      ],
+      "id": "swing_arm3",
+      "build": {
+        "order": 3
+      },
+      "shape": {
+        "type": "box",
+        "size": [
+          1.3,
+          0.08,
+          0.12
+        ]
+      },
+      "parent": "tower_root"
+    },
+    {
+      "shape": {
+        "type": "group"
+      },
+      "id": "rocket_root",
+      "build": {
+        "order": 4
+      },
+      "position": [
+        0.2,
+        0.4,
+        0
+      ]
+    },
+    {
+      "id": "s1_stage",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "parent": "rocket_root",
+      "shape": {
+        "segments": 12,
+        "type": "cylinder",
+        "radiusTop": 0.4,
+        "radiusBottom": 0.4,
+        "height": 3.4
+      },
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "engine_center",
+      "parent": "s1_stage",
+      "build": {
+        "order": 4
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "radius": 0.09,
+        "height": 0.25,
+        "segments": 8,
+        "type": "cone"
+      }
+    },
+    {
+      "position": [
+        0.2,
+        0,
+        0.2
+      ],
+      "parent": "s1_stage",
+      "build": {
+        "order": 4
+      },
+      "shape": {
+        "type": "cone",
+        "radius": 0.09,
+        "segments": 8,
+        "height": 0.25
+      },
+      "id": "engine_1"
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "shape": {
+        "radius": 0.09,
+        "segments": 8,
+        "type": "cone",
+        "height": 0.25
+      },
+      "id": "engine_2",
+      "parent": "s1_stage",
+      "position": [
+        -0.2,
+        0,
+        0.2
+      ]
+    },
+    {
+      "parent": "s1_stage",
+      "id": "engine_3",
+      "build": {
+        "order": 4
+      },
+      "shape": {
+        "type": "cone",
+        "radius": 0.09,
+        "segments": 8,
+        "height": 0.25
+      },
+      "position": [
+        0.2,
+        0,
+        -0.2
+      ]
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "engine_4",
+      "parent": "s1_stage",
+      "position": [
+        -0.2,
+        0,
+        -0.2
+      ],
+      "shape": {
+        "type": "cone",
+        "segments": 8,
+        "height": 0.25,
+        "radius": 0.09
+      }
+    },
+    {
+      "intensity": 2.5,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 4
+      },
+      "shape": {
+        "radius": 0.35,
+        "segments": 8,
+        "height": 0.8,
+        "type": "cone"
+      },
+      "id": "plume",
+      "parent": "s1_stage"
+    },
+    {
+      "parent": "s1_stage",
+      "shape": {
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.22,
+            0.05
+          ],
+          [
+            0.22,
+            0.35
+          ],
+          [
+            0,
+            0.5
+          ]
+        ],
+        "type": "extrude",
+        "depth": 0.02
+      },
+      "id": "fin_1",
+      "position": [
+        0.4,
+        0.3,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "position": [
+        -0.4,
+        0.3,
+        0
+      ],
+      "id": "fin_2",
+      "shape": {
+        "depth": 0.02,
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.22,
+            0.05
+          ],
+          [
+            0.22,
+            0.35
+          ],
+          [
+            0,
+            0.5
+          ]
+        ],
+        "type": "extrude"
+      },
+      "build": {
+        "order": 5
+      },
+      "parent": "s1_stage",
+      "rotation": [
+        0,
+        180,
+        0
+      ]
+    },
+    {
+      "id": "fin_3",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.02,
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.22,
+            0.05
+          ],
+          [
+            0.22,
+            0.35
+          ],
+          [
+            0,
+            0.5
+          ]
+        ]
+      },
+      "build": {
+        "order": 5
+      },
+      "position": [
+        0,
+        0.3,
+        0.4
+      ],
+      "parent": "s1_stage",
+      "rotation": [
+        0,
+        90,
+        0
+      ]
+    },
+    {
+      "rotation": [
+        0,
+        270,
+        0
+      ],
+      "id": "fin_4",
+      "build": {
+        "order": 5
+      },
+      "parent": "s1_stage",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.02,
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.22,
+            0.05
+          ],
+          [
+            0.22,
+            0.35
+          ],
+          [
+            0,
+            0.5
+          ]
+        ]
+      },
+      "position": [
+        0,
+        0.3,
+        -0.4
+      ]
+    },
+    {
+      "shape": {
+        "height": 2,
+        "segments": 12,
+        "radiusTop": 0.4,
+        "type": "cylinder",
+        "radiusBottom": 0.4
+      },
+      "build": {
+        "order": 6
+      },
+      "id": "s2_stage",
+      "parent": "rocket_root",
+      "position": [
+        0,
+        3.4,
+        0
+      ]
+    },
+    {
+      "build": {
+        "order": 7
+      },
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.27,
+        "radiusBottom": 0.4,
+        "segments": 12,
+        "height": 0.4
+      },
+      "parent": "rocket_root",
+      "id": "s2_s4_transition",
+      "position": [
+        0,
+        5.4,
+        0
+      ]
+    },
+    {
+      "position": [
+        0,
+        5.8,
+        0
+      ],
+      "build": {
+        "order": 7
+      },
+      "id": "s4b_stage",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.27,
+        "segments": 12,
+        "radiusBottom": 0.27,
+        "height": 1.4
+      },
+      "parent": "rocket_root"
+    },
+    {
+      "position": [
+        0,
+        7.2,
+        0
+      ],
+      "parent": "rocket_root",
+      "shape": {
+        "segments": 12,
+        "type": "cylinder",
+        "radiusTop": 0.27,
+        "radiusBottom": 0.27,
+        "height": 0.1
+      },
+      "id": "iu_stage",
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "sla_stage",
+      "position": [
+        0,
+        7.3,
+        0
+      ],
+      "build": {
+        "order": 8
+      },
+      "shape": {
+        "height": 0.8,
+        "type": "cylinder",
+        "segments": 12,
+        "radiusBottom": 0.27,
+        "radiusTop": 0.18
+      },
+      "parent": "rocket_root"
+    },
+    {
+      "id": "csm_sm",
+      "build": {
+        "order": 8
+      },
+      "shape": {
+        "radiusBottom": 0.18,
+        "height": 0.4,
+        "segments": 12,
+        "type": "cylinder",
+        "radiusTop": 0.18
+      },
+      "parent": "rocket_root",
+      "position": [
+        0,
+        8.1,
+        0
+      ]
+    },
+    {
+      "intensity": 1.5,
+      "shape": {
+        "radius": 0.18,
+        "segments": 12,
+        "height": 0.25,
+        "type": "cone"
+      },
+      "parent": "rocket_root",
+      "position": [
+        0,
+        8.5,
+        0
+      ],
+      "build": {
+        "order": 8
+      },
+      "id": "csm_cm"
+    },
+    {
+      "id": "les_tower",
+      "parent": "rocket_root",
+      "position": [
+        0,
+        8.75,
+        0
+      ],
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.02,
+        "height": 0.5,
+        "segments": 4,
+        "radiusBottom": 0.02
+      },
+      "build": {
+        "order": 9
+      }
+    },
+    {
+      "parent": "rocket_root",
+      "id": "les_motor",
+      "position": [
+        0,
+        9.25,
+        0
+      ],
+      "build": {
+        "order": 9
+      },
+      "shape": {
+        "radiusTop": 0.04,
+        "type": "cylinder",
+        "height": 0.12,
+        "radiusBottom": 0.04,
+        "segments": 6
+      }
+    },
+    {
+      "intensity": 1.8,
+      "parent": "rocket_root",
+      "position": [
+        0,
+        9.37,
+        0
+      ],
+      "build": {
+        "order": 9
+      },
+      "id": "les_tip",
+      "shape": {
+        "type": "cone",
+        "radius": 0.01,
+        "height": 0.14,
+        "segments": 4
+      }
+    }
+  ],
+  "version": 1,
+  "id": "20261007-212053_saturn-v-launch-pad",
+  "title": "Saturn V Launch Pad",
+  "prompt": "a Saturn V rocket on its launch pad"
+}

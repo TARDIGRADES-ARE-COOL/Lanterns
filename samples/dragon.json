@@ -1,0 +1,1863 @@
+{
+  "version": 1,
+  "id": "dragon",
+  "title": "Dragon Guarding a Bridge",
+  "prompt": "a dragon guarding a bridge",
+  "notes": "Wingspan ~1.6x body length; quadruped stance, neck raised in a guard posture.",
+  "style": {
+    "color": "#19ff4a",
+    "opacity": 0.32,
+    "rim": 1.2,
+    "edgeGlow": 1.0
+  },
+  "parts": [
+    {
+      "id": "bridge",
+      "parent": null,
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "label": "Bridge",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "deck",
+      "parent": "bridge",
+      "shape": {
+        "type": "box",
+        "size": [
+          9,
+          0.3,
+          2.4
+        ]
+      },
+      "position": [
+        0,
+        1.5,
+        0
+      ],
+      "label": "Deck",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "arch_n",
+      "parent": "bridge",
+      "shape": {
+        "type": "torus",
+        "radius": 4.0,
+        "tube": 0.14,
+        "arc": 120
+      },
+      "position": [
+        0,
+        -2.6,
+        -1.0
+      ],
+      "label": "Arch rib",
+      "rotation": [
+        0,
+        0,
+        30
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "rail_n",
+      "parent": "bridge",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            -4.5,
+            0,
+            0
+          ],
+          [
+            -2,
+            0.12,
+            0
+          ],
+          [
+            0,
+            0.18,
+            0
+          ],
+          [
+            2,
+            0.12,
+            0
+          ],
+          [
+            4.5,
+            0,
+            0
+          ]
+        ],
+        "radius": 0.05
+      },
+      "position": [
+        0,
+        2.3,
+        -1.1
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "post_n0",
+      "parent": "bridge",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.65
+      },
+      "position": [
+        -4.2,
+        1.65,
+        -1.1
+      ],
+      "offset": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "post_n1",
+      "parent": "bridge",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.65
+      },
+      "position": [
+        -2.1,
+        1.65,
+        -1.1
+      ],
+      "offset": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "post_n2",
+      "parent": "bridge",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.65
+      },
+      "position": [
+        0,
+        1.65,
+        -1.1
+      ],
+      "offset": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "post_n3",
+      "parent": "bridge",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.65
+      },
+      "position": [
+        2.1,
+        1.65,
+        -1.1
+      ],
+      "offset": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "post_n4",
+      "parent": "bridge",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.65
+      },
+      "position": [
+        4.2,
+        1.65,
+        -1.1
+      ],
+      "offset": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "arch_s",
+      "parent": "bridge",
+      "shape": {
+        "type": "torus",
+        "radius": 4.0,
+        "tube": 0.14,
+        "arc": 120
+      },
+      "position": [
+        0,
+        -2.6,
+        1.0
+      ],
+      "label": "Arch rib",
+      "rotation": [
+        0,
+        0,
+        30
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "rail_s",
+      "parent": "bridge",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            -4.5,
+            0,
+            0
+          ],
+          [
+            -2,
+            0.12,
+            0
+          ],
+          [
+            0,
+            0.18,
+            0
+          ],
+          [
+            2,
+            0.12,
+            0
+          ],
+          [
+            4.5,
+            0,
+            0
+          ]
+        ],
+        "radius": 0.05
+      },
+      "position": [
+        0,
+        2.3,
+        1.1
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "post_s0",
+      "parent": "bridge",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.65
+      },
+      "position": [
+        -4.2,
+        1.65,
+        1.1
+      ],
+      "offset": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "post_s1",
+      "parent": "bridge",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.65
+      },
+      "position": [
+        -2.1,
+        1.65,
+        1.1
+      ],
+      "offset": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "post_s2",
+      "parent": "bridge",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.65
+      },
+      "position": [
+        0,
+        1.65,
+        1.1
+      ],
+      "offset": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "post_s3",
+      "parent": "bridge",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.65
+      },
+      "position": [
+        2.1,
+        1.65,
+        1.1
+      ],
+      "offset": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "post_s4",
+      "parent": "bridge",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.65
+      },
+      "position": [
+        4.2,
+        1.65,
+        1.1
+      ],
+      "offset": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "pillar_w",
+      "parent": "bridge",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.9,
+          1.65,
+          2.6
+        ]
+      },
+      "position": [
+        -4.0,
+        0.825,
+        0
+      ],
+      "label": "Pillar",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "pillar_e",
+      "parent": "bridge",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.9,
+          1.65,
+          2.6
+        ]
+      },
+      "position": [
+        4.0,
+        0.825,
+        0
+      ],
+      "label": "Pillar",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "dragon",
+      "parent": null,
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        1.65,
+        0
+      ],
+      "label": "Dragon",
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "torso",
+      "parent": "dragon",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.7,
+        "segments": 20
+      },
+      "position": [
+        0,
+        1.1,
+        0
+      ],
+      "label": "Torso",
+      "scale": [
+        1.7,
+        0.95,
+        1.0
+      ],
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "spine_0",
+      "parent": "torso",
+      "shape": {
+        "type": "cone",
+        "radius": 0.08,
+        "height": 0.28
+      },
+      "position": [
+        0.6,
+        0.62,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        20
+      ],
+      "offset": [
+        0,
+        0.14,
+        0
+      ],
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "spine_1",
+      "parent": "torso",
+      "shape": {
+        "type": "cone",
+        "radius": 0.08,
+        "height": 0.28
+      },
+      "position": [
+        0.2,
+        0.62,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        20
+      ],
+      "offset": [
+        0,
+        0.14,
+        0
+      ],
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "spine_2",
+      "parent": "torso",
+      "shape": {
+        "type": "cone",
+        "radius": 0.08,
+        "height": 0.28
+      },
+      "position": [
+        -0.2,
+        0.62,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        20
+      ],
+      "offset": [
+        0,
+        0.14,
+        0
+      ],
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "spine_3",
+      "parent": "torso",
+      "shape": {
+        "type": "cone",
+        "radius": 0.08,
+        "height": 0.28
+      },
+      "position": [
+        -0.6,
+        0.62,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        20
+      ],
+      "offset": [
+        0,
+        0.14,
+        0
+      ],
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "leg_fl_upper",
+      "parent": "torso",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.2,
+        "radiusBottom": 0.15,
+        "height": 0.6,
+        "segments": 10
+      },
+      "position": [
+        0.75,
+        -0.3,
+        0.42
+      ],
+      "label": "Leg",
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "offset": [
+        0,
+        -0.3,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_fl_lower",
+      "parent": "leg_fl_upper",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.15,
+        "radiusBottom": 0.11,
+        "height": 0.45,
+        "segments": 10
+      },
+      "position": [
+        0,
+        -0.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -14
+      ],
+      "offset": [
+        0,
+        -0.225,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_fl_foot",
+      "parent": "leg_fl_lower",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.1,
+          0.28
+        ]
+      },
+      "position": [
+        0,
+        -0.45,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        6
+      ],
+      "offset": [
+        0.12,
+        0,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_fr_upper",
+      "parent": "torso",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.2,
+        "radiusBottom": 0.15,
+        "height": 0.6,
+        "segments": 10
+      },
+      "position": [
+        0.75,
+        -0.3,
+        -0.42
+      ],
+      "label": "Leg",
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "offset": [
+        0,
+        -0.3,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_fr_lower",
+      "parent": "leg_fr_upper",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.15,
+        "radiusBottom": 0.11,
+        "height": 0.45,
+        "segments": 10
+      },
+      "position": [
+        0,
+        -0.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -14
+      ],
+      "offset": [
+        0,
+        -0.225,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_fr_foot",
+      "parent": "leg_fr_lower",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.1,
+          0.28
+        ]
+      },
+      "position": [
+        0,
+        -0.45,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        6
+      ],
+      "offset": [
+        0.12,
+        0,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_bl_upper",
+      "parent": "torso",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.2,
+        "radiusBottom": 0.15,
+        "height": 0.6,
+        "segments": 10
+      },
+      "position": [
+        -0.75,
+        -0.3,
+        0.42
+      ],
+      "label": "Leg",
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "offset": [
+        0,
+        -0.3,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_bl_lower",
+      "parent": "leg_bl_upper",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.15,
+        "radiusBottom": 0.11,
+        "height": 0.45,
+        "segments": 10
+      },
+      "position": [
+        0,
+        -0.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -14
+      ],
+      "offset": [
+        0,
+        -0.225,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_bl_foot",
+      "parent": "leg_bl_lower",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.1,
+          0.28
+        ]
+      },
+      "position": [
+        0,
+        -0.45,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        6
+      ],
+      "offset": [
+        0.12,
+        0,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_br_upper",
+      "parent": "torso",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.2,
+        "radiusBottom": 0.15,
+        "height": 0.6,
+        "segments": 10
+      },
+      "position": [
+        -0.75,
+        -0.3,
+        -0.42
+      ],
+      "label": "Leg",
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "offset": [
+        0,
+        -0.3,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_br_lower",
+      "parent": "leg_br_upper",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.15,
+        "radiusBottom": 0.11,
+        "height": 0.45,
+        "segments": 10
+      },
+      "position": [
+        0,
+        -0.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -14
+      ],
+      "offset": [
+        0,
+        -0.225,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "leg_br_foot",
+      "parent": "leg_br_lower",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.1,
+          0.28
+        ]
+      },
+      "position": [
+        0,
+        -0.45,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        6
+      ],
+      "offset": [
+        0.12,
+        0,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "neck_1",
+      "parent": "torso",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.28,
+        "radiusBottom": 0.38,
+        "height": 0.6,
+        "segments": 12
+      },
+      "position": [
+        1.0,
+        0.25,
+        0
+      ],
+      "label": "Neck",
+      "rotation": [
+        0,
+        0,
+        -50
+      ],
+      "offset": [
+        0,
+        0.3,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "neck_2",
+      "parent": "neck_1",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.22,
+        "radiusBottom": 0.28,
+        "height": 0.55,
+        "segments": 12
+      },
+      "position": [
+        0,
+        0.55,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        15
+      ],
+      "offset": [
+        0,
+        0.275,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "neck_3",
+      "parent": "neck_2",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.2,
+        "radiusBottom": 0.22,
+        "height": 0.5,
+        "segments": 12
+      },
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        20
+      ],
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "head",
+      "parent": "neck_3",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "label": "Head",
+      "rotation": [
+        0,
+        20,
+        15
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "skull",
+      "parent": "head",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.7,
+          0.42,
+          0.45
+        ]
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0.25,
+        0.05,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "snout",
+      "parent": "head",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.55,
+          0.25,
+          0.32
+        ]
+      },
+      "position": [
+        0.55,
+        0,
+        0
+      ],
+      "offset": [
+        0.27,
+        0,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "jaw",
+      "parent": "head",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.75,
+          0.1,
+          0.3
+        ]
+      },
+      "position": [
+        0.15,
+        -0.18,
+        0
+      ],
+      "label": "Jaw",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "offset": [
+        0.37,
+        0,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "horn_l",
+      "parent": "head",
+      "shape": {
+        "type": "cone",
+        "radius": 0.07,
+        "height": 0.5
+      },
+      "position": [
+        -0.05,
+        0.22,
+        0.15
+      ],
+      "rotation": [
+        20,
+        0,
+        50
+      ],
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "eye_l",
+      "parent": "head",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.06,
+        "segments": 8
+      },
+      "position": [
+        0.35,
+        0.12,
+        0.2025
+      ],
+      "build": {
+        "order": 8
+      },
+      "intensity": 3
+    },
+    {
+      "id": "horn_r",
+      "parent": "head",
+      "shape": {
+        "type": "cone",
+        "radius": 0.07,
+        "height": 0.5
+      },
+      "position": [
+        -0.05,
+        0.22,
+        -0.15
+      ],
+      "rotation": [
+        -20,
+        0,
+        50
+      ],
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "eye_r",
+      "parent": "head",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.06,
+        "segments": 8
+      },
+      "position": [
+        0.35,
+        0.12,
+        -0.2025
+      ],
+      "build": {
+        "order": 8
+      },
+      "intensity": 3
+    },
+    {
+      "id": "wing_l",
+      "parent": "torso",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0.3,
+            0
+          ],
+          [
+            0.6,
+            1.2
+          ],
+          [
+            0.4,
+            2.6
+          ],
+          [
+            -0.3,
+            2.2
+          ],
+          [
+            -0.5,
+            1.6
+          ],
+          [
+            -1.0,
+            1.4
+          ],
+          [
+            -0.9,
+            0.8
+          ],
+          [
+            -1.4,
+            0.6
+          ],
+          [
+            -0.6,
+            0.1
+          ]
+        ],
+        "depth": 0.04
+      },
+      "position": [
+        0.2,
+        0.55,
+        0.45
+      ],
+      "label": "Wing",
+      "rotation": [
+        60,
+        0,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "wing_l_spar",
+      "parent": "wing_l",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0.3,
+            0,
+            0
+          ],
+          [
+            0.6,
+            1.2,
+            0
+          ],
+          [
+            0.4,
+            2.6,
+            0
+          ]
+        ],
+        "radius": 0.06
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "wing_l_bone1",
+      "parent": "wing_l",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0.6,
+            1.2,
+            0
+          ],
+          [
+            -0.5,
+            1.6,
+            0
+          ]
+        ],
+        "radius": 0.035
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "wing_l_bone2",
+      "parent": "wing_l",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0.6,
+            1.2,
+            0
+          ],
+          [
+            -0.9,
+            0.8,
+            0
+          ]
+        ],
+        "radius": 0.035
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "wing_r",
+      "parent": "torso",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0.3,
+            0
+          ],
+          [
+            0.6,
+            1.2
+          ],
+          [
+            0.4,
+            2.6
+          ],
+          [
+            -0.3,
+            2.2
+          ],
+          [
+            -0.5,
+            1.6
+          ],
+          [
+            -1.0,
+            1.4
+          ],
+          [
+            -0.9,
+            0.8
+          ],
+          [
+            -1.4,
+            0.6
+          ],
+          [
+            -0.6,
+            0.1
+          ]
+        ],
+        "depth": 0.04
+      },
+      "position": [
+        0.2,
+        0.55,
+        -0.45
+      ],
+      "label": "Wing",
+      "rotation": [
+        -60,
+        0,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "wing_r_spar",
+      "parent": "wing_r",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0.3,
+            0,
+            0
+          ],
+          [
+            0.6,
+            1.2,
+            0
+          ],
+          [
+            0.4,
+            2.6,
+            0
+          ]
+        ],
+        "radius": 0.06
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "wing_r_bone1",
+      "parent": "wing_r",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0.6,
+            1.2,
+            0
+          ],
+          [
+            -0.5,
+            1.6,
+            0
+          ]
+        ],
+        "radius": 0.035
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "wing_r_bone2",
+      "parent": "wing_r",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            0.6,
+            1.2,
+            0
+          ],
+          [
+            -0.9,
+            0.8,
+            0
+          ]
+        ],
+        "radius": 0.035
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "tail_1",
+      "parent": "torso",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.14,
+        "radiusBottom": 0.32,
+        "height": 0.8,
+        "segments": 12
+      },
+      "position": [
+        -1.1,
+        -0.1,
+        0
+      ],
+      "label": "Tail",
+      "rotation": [
+        0,
+        0,
+        100
+      ],
+      "offset": [
+        0,
+        0.4,
+        0
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "tail_2",
+      "parent": "tail_1",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.09,
+        "radiusBottom": 0.14,
+        "height": 0.7,
+        "segments": 10
+      },
+      "position": [
+        0,
+        0.78,
+        0
+      ],
+      "rotation": [
+        0,
+        15,
+        -10
+      ],
+      "offset": [
+        0,
+        0.35,
+        0
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "tail_3",
+      "parent": "tail_2",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.05,
+        "radiusBottom": 0.09,
+        "height": 0.6,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0.68,
+        0
+      ],
+      "rotation": [
+        0,
+        15,
+        -15
+      ],
+      "offset": [
+        0,
+        0.3,
+        0
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "tail_tip",
+      "parent": "tail_3",
+      "shape": {
+        "type": "cone",
+        "radius": 0.15,
+        "height": 0.32
+      },
+      "position": [
+        0,
+        0.6,
+        0
+      ],
+      "offset": [
+        0,
+        0.16,
+        0
+      ],
+      "build": {
+        "order": 7
+      },
+      "intensity": 1.6
+    }
+  ],
+  "animations": [
+    {
+      "part": "wing_l",
+      "property": "rotation",
+      "duration": 2.2,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            -30,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            25,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "wing_r",
+      "property": "rotation",
+      "duration": 2.2,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            30,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -25,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "jaw",
+      "property": "rotation",
+      "duration": 3.0,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            -12
+          ]
+        }
+      ]
+    },
+    {
+      "part": "neck_1",
+      "property": "rotation",
+      "duration": 4.0,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -4,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "tail_1",
+      "property": "rotation",
+      "duration": 3.0,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -12,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            12,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "tail_2",
+      "property": "rotation",
+      "duration": 3.0,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.15,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -15,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "tail_3",
+      "property": "rotation",
+      "duration": 3.0,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.3,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -18,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            18,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "dragon",
+      "property": "position",
+      "duration": 4.0,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0.04,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "forge": {
+    "duration": 8
+  }
+}

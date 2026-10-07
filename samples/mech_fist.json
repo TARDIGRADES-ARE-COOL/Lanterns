@@ -1,0 +1,983 @@
+{
+  "version": 1,
+  "id": "mech_fist",
+  "title": "Giant Mech Fist",
+  "prompt": "a giant mech fist",
+  "style": {
+    "color": "#19ff4a",
+    "opacity": 0.32,
+    "rim": 1.2,
+    "edgeGlow": 1.0
+  },
+  "parts": [
+    {
+      "id": "base",
+      "parent": null,
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 1.3,
+        "radiusBottom": 1.5,
+        "height": 0.25,
+        "segments": 6
+      },
+      "position": [
+        0,
+        0.125,
+        0
+      ],
+      "label": "Hex plinth",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "forearm",
+      "parent": null,
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.55,
+        "radiusBottom": 0.72,
+        "height": 2.2,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0.25,
+        0
+      ],
+      "label": "Forearm",
+      "offset": [
+        0,
+        1.1,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "plate_l",
+      "parent": "forearm",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          1.7,
+          0.7
+        ]
+      },
+      "position": [
+        -0.66,
+        1.15,
+        0
+      ],
+      "label": "Armour plate",
+      "rotation": [
+        0,
+        0,
+        4
+      ],
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "piston_housing_l",
+      "parent": "forearm",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.13,
+        "radiusBottom": 0.13,
+        "height": 0.8
+      },
+      "position": [
+        -0.88,
+        0.35,
+        0.25
+      ],
+      "offset": [
+        0,
+        0.4,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "piston_rod_l",
+      "parent": "piston_housing_l",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.06,
+        "height": 0.9
+      },
+      "position": [
+        0,
+        0.8,
+        0
+      ],
+      "offset": [
+        0,
+        0.45,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "plate_r",
+      "parent": "forearm",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          1.7,
+          0.7
+        ]
+      },
+      "position": [
+        0.66,
+        1.15,
+        0
+      ],
+      "label": "Armour plate",
+      "rotation": [
+        0,
+        0,
+        -4
+      ],
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "piston_housing_r",
+      "parent": "forearm",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.13,
+        "radiusBottom": 0.13,
+        "height": 0.8
+      },
+      "position": [
+        0.88,
+        0.35,
+        0.25
+      ],
+      "offset": [
+        0,
+        0.4,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "piston_rod_r",
+      "parent": "piston_housing_r",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.06,
+        "height": 0.9
+      },
+      "position": [
+        0,
+        0.8,
+        0
+      ],
+      "offset": [
+        0,
+        0.45,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "plate_front",
+      "parent": "forearm",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.55,
+          1.8,
+          0.12
+        ]
+      },
+      "position": [
+        0,
+        1.15,
+        0.64
+      ],
+      "rotation": [
+        -3,
+        0,
+        0
+      ],
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "wrist_gear",
+      "parent": "forearm",
+      "shape": {
+        "type": "torus",
+        "radius": 0.66,
+        "tube": 0.09
+      },
+      "position": [
+        0,
+        2.2,
+        0
+      ],
+      "label": "Wrist gear",
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "wrist_hub",
+      "parent": "forearm",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.5,
+        "radiusBottom": 0.5,
+        "height": 0.3,
+        "segments": 12
+      },
+      "position": [
+        0,
+        2.2,
+        0
+      ],
+      "label": "Wrist hub",
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "gear_tooth_0",
+      "parent": "wrist_hub",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.14,
+          0.16
+        ]
+      },
+      "position": [
+        0.78,
+        0,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "gear_tooth_1",
+      "parent": "wrist_hub",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.14,
+          0.16
+        ]
+      },
+      "position": [
+        0.5515432893255071,
+        0,
+        0.551543289325507
+      ],
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "gear_tooth_2",
+      "parent": "wrist_hub",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.14,
+          0.16
+        ]
+      },
+      "position": [
+        4.7761225166746774e-17,
+        0,
+        0.78
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "gear_tooth_3",
+      "parent": "wrist_hub",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.14,
+          0.16
+        ]
+      },
+      "position": [
+        -0.551543289325507,
+        0,
+        0.5515432893255071
+      ],
+      "rotation": [
+        0,
+        -135,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "gear_tooth_4",
+      "parent": "wrist_hub",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.14,
+          0.16
+        ]
+      },
+      "position": [
+        -0.78,
+        0,
+        9.552245033349355e-17
+      ],
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "gear_tooth_5",
+      "parent": "wrist_hub",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.14,
+          0.16
+        ]
+      },
+      "position": [
+        -0.5515432893255072,
+        0,
+        -0.551543289325507
+      ],
+      "rotation": [
+        0,
+        -225,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "gear_tooth_6",
+      "parent": "wrist_hub",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.14,
+          0.16
+        ]
+      },
+      "position": [
+        -1.4328367550024033e-16,
+        0,
+        -0.78
+      ],
+      "rotation": [
+        0,
+        -270,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "gear_tooth_7",
+      "parent": "wrist_hub",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.16,
+          0.14,
+          0.16
+        ]
+      },
+      "position": [
+        0.551543289325507,
+        0,
+        -0.5515432893255072
+      ],
+      "rotation": [
+        0,
+        -315,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "hand",
+      "parent": "forearm",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.4,
+          1.0,
+          0.9
+        ]
+      },
+      "position": [
+        0,
+        2.4,
+        0
+      ],
+      "label": "Palm",
+      "offset": [
+        0,
+        0.5,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "finger0_prox",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.32,
+          0.75
+        ]
+      },
+      "position": [
+        -0.48,
+        1.0,
+        0
+      ],
+      "label": "Finger 1",
+      "offset": [
+        0,
+        0.16,
+        0.375
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "finger0_mid",
+      "parent": "finger0_prox",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.62,
+          0.3
+        ]
+      },
+      "position": [
+        0,
+        0.32,
+        0.45
+      ],
+      "offset": [
+        0,
+        -0.31,
+        0.15
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "knuckle0",
+      "parent": "hand",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.17,
+        "segments": 10
+      },
+      "position": [
+        -0.48,
+        1.16,
+        0.0
+      ],
+      "build": {
+        "order": 6
+      },
+      "intensity": 1.4
+    },
+    {
+      "id": "finger1_prox",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.32,
+          0.75
+        ]
+      },
+      "position": [
+        -0.16,
+        1.0,
+        0
+      ],
+      "label": "Finger 2",
+      "offset": [
+        0,
+        0.16,
+        0.375
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "finger1_mid",
+      "parent": "finger1_prox",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.7,
+          0.3
+        ]
+      },
+      "position": [
+        0,
+        0.32,
+        0.45
+      ],
+      "offset": [
+        0,
+        -0.35,
+        0.15
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "knuckle1",
+      "parent": "hand",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.17,
+        "segments": 10
+      },
+      "position": [
+        -0.16,
+        1.16,
+        0.0
+      ],
+      "build": {
+        "order": 6
+      },
+      "intensity": 1.4
+    },
+    {
+      "id": "finger2_prox",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.32,
+          0.75
+        ]
+      },
+      "position": [
+        0.16,
+        1.0,
+        0
+      ],
+      "label": "Finger 3",
+      "offset": [
+        0,
+        0.16,
+        0.375
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "finger2_mid",
+      "parent": "finger2_prox",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.66,
+          0.3
+        ]
+      },
+      "position": [
+        0,
+        0.32,
+        0.45
+      ],
+      "offset": [
+        0,
+        -0.33,
+        0.15
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "knuckle2",
+      "parent": "hand",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.17,
+        "segments": 10
+      },
+      "position": [
+        0.16,
+        1.16,
+        0.0
+      ],
+      "build": {
+        "order": 6
+      },
+      "intensity": 1.4
+    },
+    {
+      "id": "finger3_prox",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.32,
+          0.75
+        ]
+      },
+      "position": [
+        0.48,
+        1.0,
+        0
+      ],
+      "label": "Finger 4",
+      "offset": [
+        0,
+        0.16,
+        0.375
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "finger3_mid",
+      "parent": "finger3_prox",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.55,
+          0.3
+        ]
+      },
+      "position": [
+        0,
+        0.32,
+        0.45
+      ],
+      "offset": [
+        0,
+        -0.275,
+        0.15
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "knuckle3",
+      "parent": "hand",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.17,
+        "segments": 10
+      },
+      "position": [
+        0.48,
+        1.16,
+        0.0
+      ],
+      "build": {
+        "order": 6
+      },
+      "intensity": 1.4
+    },
+    {
+      "id": "thumb_base",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.32,
+          0.55,
+          0.38
+        ]
+      },
+      "position": [
+        -0.72,
+        0.2,
+        0.15
+      ],
+      "label": "Thumb",
+      "rotation": [
+        0,
+        0,
+        -25
+      ],
+      "offset": [
+        0,
+        0.27,
+        0
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "thumb_tip",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.85,
+          0.28,
+          0.3
+        ]
+      },
+      "position": [
+        -0.62,
+        0.75,
+        0.82
+      ],
+      "offset": [
+        0.42,
+        0,
+        0
+      ],
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "core",
+      "parent": "hand",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.22,
+        "segments": 16
+      },
+      "position": [
+        0,
+        0.5,
+        0.5
+      ],
+      "label": "Power core",
+      "build": {
+        "order": 8
+      },
+      "intensity": 2.5
+    }
+  ],
+  "animations": [
+    {
+      "part": "wrist_hub",
+      "property": "rotation",
+      "duration": 4,
+      "loop": "repeat",
+      "easing": "linear",
+      "phase": 0.0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            360,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "wrist_gear",
+      "property": "rotation",
+      "duration": 6,
+      "loop": "repeat",
+      "easing": "linear",
+      "phase": 0.0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            -360
+          ]
+        }
+      ]
+    },
+    {
+      "part": "piston_rod_l",
+      "property": "position",
+      "duration": 1.6,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            -0.35,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "piston_rod_r",
+      "property": "position",
+      "duration": 1.6,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.5,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            -0.35,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "core",
+      "property": "scale",
+      "duration": 1.2,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      ]
+    }
+  ],
+  "forge": {
+    "duration": 6
+  }
+}

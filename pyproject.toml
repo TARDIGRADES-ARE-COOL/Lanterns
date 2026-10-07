@@ -1,0 +1,21 @@
+[project]
+name = "emerald-ring"
+version = "0.1.0"
+description = "A CLI agent that forges glowing hard-light constructs and renders them in 3D."
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=1.11.0",
+    "jsonschema>=4.21",
+    "openai>=3.26.0",
+    "rich>=13.7",
+]
+
+[project.scripts]
+ring = "emerald_ring.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["emerald_ring"]

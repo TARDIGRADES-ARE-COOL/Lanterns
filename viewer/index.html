@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Green Lantern</title>
+  <style>
+    :root { --green: #19ff4a; --dim: #0d6b28; --bg: #020604; }
+    html, body { margin: 0; height: 100%; background: var(--bg); overflow: hidden;
+      font-family: ui-monospace, "SF Mono", Menlo, monospace; color: var(--green); }
+    canvas { display: block; }
+    #hud { position: fixed; top: 16px; left: 16px; pointer-events: none; text-shadow: 0 0 8px var(--green); }
+    #hud .brand { font-size: 11px; letter-spacing: 0.35em; opacity: 0.7; }
+    #hud .title { font-size: 20px; margin-top: 6px; }
+    #hud .meta { font-size: 12px; opacity: 0.6; margin-top: 4px; }
+    #hud .status { font-size: 12px; letter-spacing: 0.2em; margin-top: 10px; }
+    #replay { position: fixed; top: 16px; right: 16px; background: transparent; color: var(--green);
+      border: 1px solid var(--dim); padding: 8px 14px; font: inherit; font-size: 12px; letter-spacing: 0.15em;
+      cursor: pointer; text-shadow: 0 0 8px var(--green); }
+    #replay:hover { border-color: var(--green); box-shadow: 0 0 12px rgba(25, 255, 74, 0.35); }
+    #error { position: fixed; inset: 0; display: none; align-items: center; justify-content: center;
+      padding: 24px; color: #ff6b6b; white-space: pre-wrap; text-align: center; }
+    #hint { position: fixed; bottom: 14px; right: 16px; font-size: 11px; opacity: 0.4; text-align: right; }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="hud">
+    <div class="brand">GREEN LANTERN</div>
+    <div class="title" id="title">…</div>
+    <div class="meta" id="meta"></div>
+    <div class="status" id="status"></div>
+  </div>
+  <button id="replay">↻ REPLAY</button>
+  <div id="error"></div>
+  <div id="hint">drag to orbit · scroll to zoom · right-drag to pan<br>R replay · space skip<br>Unofficial fan project · not affiliated with or endorsed by DC</div>
+  <script type="module" src="/viewer/main.js"></script>
+</body>
+</html>

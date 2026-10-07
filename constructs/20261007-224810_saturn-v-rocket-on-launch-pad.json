@@ -1,0 +1,200 @@
+{
+  "id": "20261007-224810_saturn-v-rocket-on-launch-pad",
+  "version": 1,
+  "title": "Saturn V Rocket on Launch Pad",
+  "prompt": "a Saturn V rocket on its launch pad",
+  "forge": {
+    "duration": 8,
+    "ringPosition": [
+      0,
+      5,
+      0
+    ]
+  },
+  "parts": [
+    {
+      "shape": {
+        "type": "box",
+        "size": [
+          8,
+          0.5,
+          8
+        ]
+      },
+      "position": [
+        0,
+        0.25,
+        0
+      ],
+      "id": "pad_base",
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "shape": {
+        "radiusBottom": 0.4,
+        "radiusTop": 0.4,
+        "type": "cylinder",
+        "height": 10
+      },
+      "build": {
+        "order": 2
+      },
+      "position": [
+        3.5,
+        5,
+        0
+      ],
+      "id": "launch_tower"
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "position": [
+        0,
+        2.5,
+        0
+      ],
+      "id": "stage1_body",
+      "shape": {
+        "type": "cylinder",
+        "height": 4,
+        "radiusBottom": 1,
+        "radiusTop": 1
+      }
+    },
+    {
+      "id": "stage2_body",
+      "build": {
+        "order": 4
+      },
+      "shape": {
+        "radiusBottom": 0.9,
+        "height": 2,
+        "radiusTop": 0.9,
+        "type": "cylinder"
+      },
+      "position": [
+        0,
+        5.5,
+        0
+      ]
+    },
+    {
+      "shape": {
+        "height": 1,
+        "radiusBottom": 0.8,
+        "type": "cylinder",
+        "radiusTop": 0.8
+      },
+      "id": "stage3_body",
+      "build": {
+        "order": 5
+      },
+      "position": [
+        0,
+        7,
+        0
+      ]
+    },
+    {
+      "position": [
+        0,
+        7.8,
+        0
+      ],
+      "build": {
+        "order": 6
+      },
+      "shape": {
+        "height": 0.8,
+        "type": "cone",
+        "radius": 0.8
+      },
+      "id": "command_module"
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "position": [
+        1,
+        1,
+        0
+      ],
+      "id": "launch_clamp1",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.4,
+          2,
+          0.4
+        ]
+      }
+    },
+    {
+      "shape": {
+        "type": "box",
+        "size": [
+          0.4,
+          2,
+          0.4
+        ]
+      },
+      "position": [
+        -1,
+        1,
+        0
+      ],
+      "id": "launch_clamp2",
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "shape": {
+        "type": "cone",
+        "height": 2,
+        "radius": 0.9
+      },
+      "id": "exhaust_plume",
+      "position": [
+        0,
+        -1,
+        0
+      ],
+      "build": {
+        "order": 3
+      },
+      "intensity": 2
+    }
+  ],
+  "animations": [
+    {
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "value": [
+            1,
+            1,
+            1
+          ],
+          "t": 0
+        },
+        {
+          "t": 1,
+          "value": [
+            1.1,
+            1.2,
+            1.1
+          ]
+        }
+      ],
+      "duration": 0.5,
+      "part": "exhaust_plume",
+      "property": "scale"
+    }
+  ]
+}

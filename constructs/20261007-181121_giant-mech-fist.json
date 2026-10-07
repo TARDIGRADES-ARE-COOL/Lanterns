@@ -1,0 +1,1334 @@
+{
+  "version": 1,
+  "title": "Giant Mech Fist",
+  "parts": [
+    {
+      "id": "c_palm",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "palm_p",
+      "shape": {
+        "type": "box",
+        "size": [
+          2,
+          0.35,
+          2.4
+        ]
+      },
+      "position": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "parent": "c_palm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "palm_b",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.6,
+          0.1,
+          0.6
+        ]
+      },
+      "position": [
+        0.0,
+        0.3,
+        0.0
+      ],
+      "parent": "c_palm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "palm_c",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.04,
+        "radiusBottom": 0.04,
+        "height": 2.4,
+        "segments": 12
+      },
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "position": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "intensity": 2.5,
+      "parent": "c_palm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "palm_h1",
+      "shape": {
+        "type": "box",
+        "size": [
+          2,
+          0.35,
+          0.02
+        ]
+      },
+      "position": [
+        0.0,
+        0.18,
+        -0.9
+      ],
+      "parent": "c_palm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "palm_h2",
+      "shape": {
+        "type": "box",
+        "size": [
+          2,
+          0.35,
+          0.02
+        ]
+      },
+      "position": [
+        0.0,
+        0.18,
+        -0.45
+      ],
+      "parent": "c_palm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "palm_h3",
+      "shape": {
+        "type": "box",
+        "size": [
+          2,
+          0.35,
+          0.02
+        ]
+      },
+      "position": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "parent": "c_palm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "palm_h4",
+      "shape": {
+        "type": "box",
+        "size": [
+          2,
+          0.35,
+          0.02
+        ]
+      },
+      "position": [
+        0.0,
+        0.18,
+        0.45
+      ],
+      "parent": "c_palm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "palm_h5",
+      "shape": {
+        "type": "box",
+        "size": [
+          2,
+          0.35,
+          0.02
+        ]
+      },
+      "position": [
+        0.0,
+        0.18,
+        0.9
+      ],
+      "parent": "c_palm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "palm_v1",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.02,
+          0.35,
+          2.4
+        ]
+      },
+      "position": [
+        -0.5,
+        0.18,
+        0.0
+      ],
+      "parent": "c_palm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "palm_v2",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.02,
+          0.35,
+          2.4
+        ]
+      },
+      "position": [
+        0.5,
+        0.18,
+        0.0
+      ],
+      "parent": "c_palm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "c_thumb",
+      "parent": "c_palm",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        -0.85,
+        0.15,
+        0.75
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "thumb_t_base",
+      "parent": "c_thumb",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.25,
+          0.25,
+          0.3
+        ]
+      },
+      "position": [
+        0.0,
+        0.15,
+        0.0
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "thumb_t_knuckle",
+      "parent": "c_thumb",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.1,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.28,
+        0.0
+      ],
+      "intensity": 2.5,
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "thumb_t_mid",
+      "parent": "c_thumb",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.22,
+          0.3,
+          0.22
+        ]
+      },
+      "position": [
+        -0.16,
+        0.36,
+        0.02
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "thumb_t_pin",
+      "parent": "c_thumb",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.06,
+        "height": 0.25,
+        "segments": 8
+      },
+      "position": [
+        -0.17,
+        0.36,
+        0.17
+      ],
+      "rotation": [
+        0,
+        0,
+        90
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "thumb_t_pinky",
+      "parent": "c_thumb",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.06,
+        "height": 0.25,
+        "segments": 8
+      },
+      "position": [
+        -0.17,
+        0.36,
+        -0.19
+      ],
+      "rotation": [
+        0,
+        0,
+        90
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "thumb_t_j2",
+      "parent": "c_thumb",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.1,
+        "segments": 10
+      },
+      "position": [
+        -0.26,
+        0.5,
+        0.02
+      ],
+      "intensity": 2.2,
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "thumb_t_tip",
+      "parent": "c_thumb",
+      "shape": {
+        "type": "cone",
+        "radius": 0.16,
+        "height": 0.24
+      },
+      "position": [
+        -0.46,
+        0.55,
+        0.04
+      ],
+      "rotation": [
+        0,
+        0,
+        110
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "c_finger_index",
+      "parent": "c_palm",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0.25,
+        0.18,
+        0.95
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "finger_index_g0",
+      "shape": {
+        "type": "group"
+      },
+      "rotation": [
+        5,
+        0,
+        0
+      ],
+      "parent": "c_finger_index",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "finger_index_p1",
+      "parent": "finger_index_g0",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.2,
+          0.15,
+          0.15
+        ]
+      },
+      "position": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "finger_index_p2",
+      "parent": "finger_index_g0",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.18,
+          0.13,
+          0.13
+        ]
+      },
+      "position": [
+        0.0,
+        0.29,
+        0.0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "finger_index_p3",
+      "parent": "finger_index_g0",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.15,
+          0.12,
+          0.12
+        ]
+      },
+      "position": [
+        0.0,
+        0.46,
+        0.0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "finger_index_t1",
+      "parent": "finger_index_g0",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.04,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.57,
+        0.0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "finger_index_j1",
+      "parent": "finger_index_g0",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.09,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.2,
+        0.0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "finger_index_j2",
+      "parent": "finger_index_g0",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.09,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.38,
+        0.0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "finger_index_tor1",
+      "parent": "finger_index_g0",
+      "shape": {
+        "type": "torus",
+        "radius": 0.12,
+        "tube": 0.02,
+        "arc": 360
+      },
+      "position": [
+        0.0,
+        0.2,
+        0.0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "finger_index_tor2",
+      "parent": "finger_index_g0",
+      "shape": {
+        "type": "torus",
+        "radius": 0.12,
+        "tube": 0.02,
+        "arc": 360
+      },
+      "position": [
+        0.0,
+        0.38,
+        0.0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "c_finger_middle",
+      "parent": "c_palm",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0.0,
+        0.18,
+        0.95
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "finger_middle_p",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.12,
+          0.49,
+          0.12
+        ]
+      },
+      "offset": [
+        0,
+        0.245,
+        0
+      ],
+      "parent": "c_finger_middle",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "finger_middle_j1",
+      "parent": "finger_middle_p",
+      "position": [
+        0.0,
+        0.49,
+        0.0
+      ],
+      "shape": {
+        "type": "sphere",
+        "radius": 0.07
+      },
+      "intensity": 2.5,
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "finger_middle_m",
+      "parent": "finger_middle_j1",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.12,
+          0.44,
+          0.12
+        ]
+      },
+      "offset": [
+        0,
+        0.22,
+        0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "finger_middle_j2",
+      "parent": "finger_middle_m",
+      "position": [
+        0.0,
+        0.44,
+        0.0
+      ],
+      "shape": {
+        "type": "sphere",
+        "radius": 0.07
+      },
+      "intensity": 2.5,
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "finger_middle_d",
+      "parent": "finger_middle_j2",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.12,
+          0.37,
+          0.12
+        ]
+      },
+      "offset": [
+        0,
+        0.185,
+        0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "finger_middle_j3",
+      "parent": "finger_middle_d",
+      "position": [
+        0.0,
+        0.37,
+        0.0
+      ],
+      "shape": {
+        "type": "sphere",
+        "radius": 0.02
+      },
+      "intensity": 2.5,
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "finger_middle_tip",
+      "parent": "finger_middle_j3",
+      "position": [
+        0.0,
+        -0.02,
+        0.0
+      ],
+      "shape": {
+        "type": "sphere",
+        "radius": 0.02
+      },
+      "intensity": 2.5,
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "finger_middle_core",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.04,
+        "radiusBottom": 0.04,
+        "height": 1.3,
+        "segments": 12
+      },
+      "offset": [
+        0,
+        0.65,
+        0
+      ],
+      "intensity": 2,
+      "parent": "c_finger_middle",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "c_finger_ring",
+      "parent": "c_palm",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        -0.25,
+        0.18,
+        0.95
+      ],
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "finger_ring_base",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.13,
+          0.42,
+          0.13
+        ]
+      },
+      "position": [
+        0.0,
+        0.25,
+        0.0
+      ],
+      "parent": "c_finger_ring",
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "finger_ring_j_mid",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.09,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "intensity": 2.0,
+      "parent": "c_finger_ring",
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "finger_ring_mid",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.11,
+          0.4,
+          0.11
+        ]
+      },
+      "position": [
+        0.0,
+        0.78,
+        0.0
+      ],
+      "parent": "c_finger_ring",
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "finger_ring_j_tip",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.09,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "intensity": 2.0,
+      "parent": "c_finger_ring",
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "finger_ring_distal",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.09,
+          0.32,
+          0.09
+        ]
+      },
+      "position": [
+        0.0,
+        1.26,
+        0.0
+      ],
+      "parent": "c_finger_ring",
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "finger_ring_tip",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.07,
+          0.15,
+          0.07
+        ]
+      },
+      "position": [
+        0.0,
+        1.54,
+        0.0
+      ],
+      "parent": "c_finger_ring",
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "finger_ring_nub",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.035,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        1.68,
+        0.0
+      ],
+      "parent": "c_finger_ring",
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "finger_ring_edge",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.015,
+          1.1,
+          0.015
+        ]
+      },
+      "position": [
+        0.0,
+        0.75,
+        0.06
+      ],
+      "intensity": 2.5,
+      "parent": "c_finger_ring",
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "c_finger_pinky",
+      "parent": "c_palm",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        -0.45,
+        0.18,
+        0.95
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "finger_pinky_p",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.12,
+          0.28,
+          0.12
+        ]
+      },
+      "position": [
+        0.0,
+        0.14,
+        0.0
+      ],
+      "intensity": 1.5,
+      "parent": "c_finger_pinky",
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "finger_pinky_m",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.12,
+          0.25,
+          0.12
+        ]
+      },
+      "position": [
+        0.0,
+        0.405,
+        0.0
+      ],
+      "intensity": 1.5,
+      "parent": "c_finger_pinky",
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "finger_pinky_d",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.12,
+          0.23,
+          0.12
+        ]
+      },
+      "position": [
+        0.0,
+        0.645,
+        0.0
+      ],
+      "intensity": 1.5,
+      "parent": "c_finger_pinky",
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "finger_pinky_t",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.12,
+          0.24,
+          0.12
+        ]
+      },
+      "position": [
+        0.0,
+        0.88,
+        0.0
+      ],
+      "intensity": 1.5,
+      "parent": "c_finger_pinky",
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "finger_pinky_j0",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.09,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "intensity": 2,
+      "parent": "c_finger_pinky",
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "finger_pinky_j1",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.09,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.28,
+        0.0
+      ],
+      "intensity": 2,
+      "parent": "c_finger_pinky",
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "finger_pinky_j2",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.09,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.53,
+        0.0
+      ],
+      "intensity": 2,
+      "parent": "c_finger_pinky",
+      "build": {
+        "order": 50
+      }
+    }
+  ],
+  "animations": [
+    {
+      "part": "palm_c",
+      "property": "scale",
+      "duration": 2,
+      "loop": "repeat",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.2,
+            1,
+            1.2
+          ]
+        }
+      ]
+    },
+    {
+      "property": "rotation",
+      "duration": 1.5,
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            30,
+            0
+          ]
+        }
+      ],
+      "part": "c_thumb"
+    },
+    {
+      "property": "rotation",
+      "duration": 1.5,
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            40,
+            0
+          ]
+        }
+      ],
+      "part": "c_finger_index"
+    },
+    {
+      "property": "rotation",
+      "duration": 1.5,
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            45,
+            0
+          ]
+        }
+      ],
+      "part": "c_finger_middle"
+    },
+    {
+      "property": "rotation",
+      "duration": 1.5,
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            38,
+            0
+          ]
+        }
+      ],
+      "part": "c_finger_ring"
+    },
+    {
+      "part": "finger_pinky_j0",
+      "property": "scale",
+      "duration": 1,
+      "loop": "repeat",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "part": "finger_pinky_j1",
+      "property": "scale",
+      "duration": 1,
+      "loop": "repeat",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "part": "finger_pinky_j2",
+      "property": "scale",
+      "duration": 1,
+      "loop": "repeat",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "property": "rotation",
+      "duration": 1.5,
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            35,
+            0
+          ]
+        }
+      ],
+      "part": "c_finger_pinky"
+    }
+  ],
+  "forge": {
+    "duration": 8
+  },
+  "id": "20261007-181121_giant-mech-fist",
+  "prompt": "a giant mech fist"
+}

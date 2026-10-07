@@ -1,0 +1,856 @@
+{
+  "version": 1,
+  "title": "Armored Powered Suit",
+  "forge": {
+    "duration": 9
+  },
+  "parts": [
+    {
+      "id": "pelvis",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.2,
+          0.26
+        ]
+      },
+      "position": [
+        0,
+        1.02,
+        0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "abs",
+      "parent": "pelvis",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.36,
+          0.25,
+          0.24
+        ]
+      },
+      "position": [
+        0,
+        0.22,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "chest",
+      "parent": "abs",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.56,
+          0.42,
+          0.32
+        ]
+      },
+      "position": [
+        0,
+        0.33,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "pec_l",
+      "parent": "chest",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.22,
+          0.16,
+          0.06
+        ]
+      },
+      "position": [
+        0.14,
+        0.08,
+        0.17
+      ],
+      "rotation": [
+        0,
+        15,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "pec_r",
+      "parent": "chest",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.22,
+          0.16,
+          0.06
+        ]
+      },
+      "position": [
+        -0.14,
+        0.08,
+        0.17
+      ],
+      "rotation": [
+        0,
+        -15,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "reactor",
+      "parent": "chest",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.07,
+        "radiusBottom": 0.07,
+        "height": 0.04
+      },
+      "position": [
+        0,
+        -0.04,
+        0.17
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 9
+      }
+    },
+    {
+      "id": "reactor_ring",
+      "parent": "chest",
+      "shape": {
+        "type": "torus",
+        "radius": 0.09,
+        "tube": 0.015
+      },
+      "position": [
+        0,
+        -0.04,
+        0.18
+      ],
+      "build": {
+        "order": 9
+      }
+    },
+    {
+      "id": "thruster_l",
+      "parent": "chest",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.3,
+        "segments": 8
+      },
+      "position": [
+        0.13,
+        -0.05,
+        -0.2
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "thruster_r",
+      "parent": "chest",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 0.3,
+        "segments": 8
+      },
+      "position": [
+        -0.13,
+        -0.05,
+        -0.2
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "neck",
+      "parent": "chest",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.07,
+        "radiusBottom": 0.09,
+        "height": 0.1
+      },
+      "position": [
+        0,
+        0.25,
+        0
+      ],
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "head",
+      "parent": "chest",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.13
+      },
+      "position": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.95,
+        1.15,
+        1.05
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "faceplate",
+      "parent": "head",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            -0.1,
+            0.08
+          ],
+          [
+            0.1,
+            0.08
+          ],
+          [
+            0.09,
+            -0.06
+          ],
+          [
+            0.04,
+            -0.13
+          ],
+          [
+            -0.04,
+            -0.13
+          ],
+          [
+            -0.09,
+            -0.06
+          ]
+        ],
+        "depth": 0.04,
+        "bevel": 0.01
+      },
+      "position": [
+        0,
+        0,
+        0.11
+      ],
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "eye_l",
+      "parent": "head",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.06,
+          0.015,
+          0.02
+        ]
+      },
+      "position": [
+        0.045,
+        0.02,
+        0.14
+      ],
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "intensity": 2.5,
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "eye_r",
+      "parent": "head",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.06,
+          0.015,
+          0.02
+        ]
+      },
+      "position": [
+        -0.045,
+        0.02,
+        0.14
+      ],
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "intensity": 2.5,
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "arm_l",
+      "parent": "chest",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.13,
+        "segments": 10
+      },
+      "position": [
+        0.36,
+        0.14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "uarm_l",
+      "parent": "arm_l",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.08,
+        "radiusBottom": 0.07,
+        "height": 0.32
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        -0.2,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "farm_l",
+      "parent": "arm_l",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.08,
+        "radiusBottom": 0.06,
+        "height": 0.3
+      },
+      "position": [
+        0,
+        -0.38,
+        0
+      ],
+      "rotation": [
+        15,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        -0.15,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "hand_l",
+      "parent": "farm_l",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.08,
+          0.14,
+          0.1
+        ]
+      },
+      "position": [
+        0,
+        -0.37,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "palm_l",
+      "parent": "hand_l",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.03
+      },
+      "position": [
+        -0.04,
+        0,
+        0
+      ],
+      "intensity": 2.5,
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "arm_r",
+      "parent": "chest",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.13,
+        "segments": 10
+      },
+      "position": [
+        -0.36,
+        0.14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "uarm_r",
+      "parent": "arm_r",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.08,
+        "radiusBottom": 0.07,
+        "height": 0.32
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        -0.2,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "farm_r",
+      "parent": "arm_r",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.08,
+        "radiusBottom": 0.06,
+        "height": 0.3
+      },
+      "position": [
+        0,
+        -0.38,
+        0
+      ],
+      "rotation": [
+        15,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        -0.15,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "hand_r",
+      "parent": "farm_r",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.08,
+          0.14,
+          0.1
+        ]
+      },
+      "position": [
+        0,
+        -0.37,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "palm_r",
+      "parent": "hand_r",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.03
+      },
+      "position": [
+        0.04,
+        0,
+        0
+      ],
+      "intensity": 2.5,
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "thigh_l",
+      "parent": "pelvis",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.11,
+        "radiusBottom": 0.08,
+        "height": 0.42
+      },
+      "position": [
+        0.13,
+        -0.05,
+        0
+      ],
+      "offset": [
+        0,
+        -0.22,
+        0
+      ],
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "shin_l",
+      "parent": "thigh_l",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.08,
+        "radiusBottom": 0.065,
+        "height": 0.4
+      },
+      "position": [
+        0,
+        -0.45,
+        0
+      ],
+      "offset": [
+        0,
+        -0.2,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "knee_l",
+      "parent": "shin_l",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.07,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0,
+        0.04
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "boot_l",
+      "parent": "shin_l",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.13,
+          0.12,
+          0.28
+        ]
+      },
+      "position": [
+        0,
+        -0.4,
+        0.05
+      ],
+      "offset": [
+        0,
+        -0.06,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "thigh_r",
+      "parent": "pelvis",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.11,
+        "radiusBottom": 0.08,
+        "height": 0.42
+      },
+      "position": [
+        -0.13,
+        -0.05,
+        0
+      ],
+      "offset": [
+        0,
+        -0.22,
+        0
+      ],
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "shin_r",
+      "parent": "thigh_r",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.08,
+        "radiusBottom": 0.065,
+        "height": 0.4
+      },
+      "position": [
+        0,
+        -0.45,
+        0
+      ],
+      "offset": [
+        0,
+        -0.2,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "id": "knee_r",
+      "parent": "shin_r",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.07,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0,
+        0.04
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "boot_r",
+      "parent": "shin_r",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.13,
+          0.12,
+          0.28
+        ]
+      },
+      "position": [
+        0,
+        -0.4,
+        0.05
+      ],
+      "offset": [
+        0,
+        -0.06,
+        0
+      ],
+      "build": {
+        "order": 3
+      }
+    }
+  ],
+  "animations": [
+    {
+      "part": "head",
+      "property": "rotation",
+      "duration": 6,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -20,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            20,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "reactor",
+      "property": "scale",
+      "duration": 1.5,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.25,
+            1,
+            1.25
+          ]
+        }
+      ]
+    },
+    {
+      "part": "chest",
+      "property": "position",
+      "duration": 3,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0.015,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "farm_r",
+      "property": "rotation",
+      "duration": 4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -60,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "arm_l",
+      "property": "rotation",
+      "duration": 5,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "20261007-221741_armored-powered-suit",
+  "prompt": "iron man suit"
+}

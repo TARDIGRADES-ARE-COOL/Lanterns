@@ -1,0 +1,1319 @@
+{
+  "forge": {
+    "ringPosition": [
+      0,
+      2,
+      -3
+    ],
+    "duration": 8
+  },
+  "title": "Giant Mech Fist",
+  "animations": [
+    {
+      "loop": "pingpong",
+      "duration": 4,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "value": [
+            0,
+            -0.15,
+            -0.2
+          ],
+          "t": 0.5
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "property": "position",
+      "easing": "sine",
+      "part": "wrist"
+    },
+    {
+      "loop": "pingpong",
+      "duration": 4,
+      "property": "rotation",
+      "easing": "sine",
+      "part": "wrist",
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "t": 0.5,
+          "value": [
+            -10,
+            5,
+            0
+          ]
+        },
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 1
+        }
+      ]
+    },
+    {
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "value": [
+            75,
+            0,
+            0
+          ],
+          "t": 0.5
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "property": "rotation",
+      "part": "ind_1",
+      "duration": 4
+    },
+    {
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "value": [
+            65,
+            0,
+            0
+          ],
+          "t": 0.5
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "part": "ind_2",
+      "loop": "pingpong",
+      "property": "rotation",
+      "duration": 4,
+      "easing": "sine"
+    },
+    {
+      "part": "ind_3",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "value": [
+            50,
+            0,
+            0
+          ],
+          "t": 0.5
+        },
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 1
+        }
+      ],
+      "property": "rotation",
+      "duration": 4,
+      "loop": "pingpong"
+    },
+    {
+      "property": "rotation",
+      "duration": 4,
+      "loop": "pingpong",
+      "part": "mid_1",
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "t": 0.5,
+          "value": [
+            75,
+            0,
+            0
+          ]
+        },
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 1
+        }
+      ],
+      "easing": "sine"
+    },
+    {
+      "loop": "pingpong",
+      "duration": 4,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "value": [
+            65,
+            0,
+            0
+          ],
+          "t": 0.5
+        },
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 1
+        }
+      ],
+      "part": "mid_2",
+      "property": "rotation",
+      "easing": "sine"
+    },
+    {
+      "part": "mid_3",
+      "duration": 4,
+      "easing": "sine",
+      "loop": "pingpong",
+      "property": "rotation",
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "t": 0.5,
+          "value": [
+            50,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "rng_1",
+      "easing": "sine",
+      "duration": 4,
+      "property": "rotation",
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "value": [
+            75,
+            0,
+            0
+          ],
+          "t": 0.5
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "t": 0.5,
+          "value": [
+            65,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "part": "rng_2",
+      "duration": 4,
+      "property": "rotation",
+      "easing": "sine",
+      "loop": "pingpong"
+    },
+    {
+      "loop": "pingpong",
+      "duration": 4,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            50,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "property": "rotation",
+      "easing": "sine",
+      "part": "rng_3"
+    },
+    {
+      "loop": "pingpong",
+      "property": "rotation",
+      "duration": 4,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            75,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "part": "pnk_1"
+    },
+    {
+      "property": "rotation",
+      "easing": "sine",
+      "duration": 4,
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            65,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "part": "pnk_2"
+    },
+    {
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "value": [
+            50,
+            0,
+            0
+          ],
+          "t": 0.5
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "easing": "sine",
+      "property": "rotation",
+      "duration": 4,
+      "part": "pnk_3"
+    },
+    {
+      "duration": 4,
+      "loop": "pingpong",
+      "property": "rotation",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            0,
+            -30,
+            45
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "part": "thb_1"
+    },
+    {
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "t": 0.5,
+          "value": [
+            0,
+            45,
+            0
+          ]
+        },
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 1
+        }
+      ],
+      "easing": "sine",
+      "loop": "pingpong",
+      "part": "thb_2",
+      "property": "rotation",
+      "duration": 4
+    },
+    {
+      "duration": 4,
+      "property": "scale",
+      "loop": "pingpong",
+      "part": "core",
+      "keyframes": [
+        {
+          "value": [
+            1,
+            1,
+            1
+          ],
+          "t": 0
+        },
+        {
+          "t": 0.5,
+          "value": [
+            1.2,
+            1,
+            1.2
+          ]
+        },
+        {
+          "value": [
+            1,
+            1,
+            1
+          ],
+          "t": 1
+        }
+      ],
+      "easing": "sine"
+    }
+  ],
+  "version": 1,
+  "id": "20261007-193533_giant-mech-fist",
+  "style": {
+    "rim": 1.5,
+    "opacity": 0.35,
+    "color": "#00ff77",
+    "edgeGlow": 1.5
+  },
+  "parts": [
+    {
+      "build": {
+        "order": 0
+      },
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      },
+      "id": "anchor"
+    },
+    {
+      "position": [
+        0,
+        0,
+        -2.3
+      ],
+      "build": {
+        "order": 0
+      },
+      "parent": "anchor",
+      "id": "emitter_ring",
+      "shape": {
+        "type": "torus",
+        "tube": 0.12,
+        "arc": 360,
+        "radius": 1.3
+      },
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "build": {
+        "order": 1
+      },
+      "position": [
+        0,
+        0,
+        -1.2
+      ],
+      "parent": "anchor",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.6,
+          1.6,
+          1.8
+        ]
+      },
+      "id": "forearm_cuff"
+    },
+    {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 1
+      },
+      "parent": "forearm_cuff",
+      "intensity": 2,
+      "shape": {
+        "height": 1.6,
+        "radiusTop": 0.4,
+        "radiusBottom": 0.4,
+        "type": "cylinder",
+        "segments": 8
+      },
+      "id": "core",
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "shape": {
+        "size": [
+          0.2,
+          1.8,
+          1.6
+        ],
+        "type": "box"
+      },
+      "position": [
+        0.9,
+        0,
+        0
+      ],
+      "id": "plate_l",
+      "build": {
+        "order": 2
+      },
+      "parent": "forearm_cuff"
+    },
+    {
+      "position": [
+        -0.9,
+        0,
+        0
+      ],
+      "build": {
+        "order": 2
+      },
+      "parent": "forearm_cuff",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.2,
+          1.8,
+          1.6
+        ]
+      },
+      "id": "plate_r"
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "intensity": 2.5,
+      "shape": {
+        "type": "box",
+        "size": [
+          0.5,
+          0.06,
+          1.2
+        ]
+      },
+      "parent": "forearm_cuff",
+      "id": "glow_strip_top",
+      "position": [
+        0,
+        0.82,
+        0
+      ]
+    },
+    {
+      "shape": {
+        "radius": 0.65,
+        "type": "sphere",
+        "segments": 10
+      },
+      "build": {
+        "order": 3
+      },
+      "position": [
+        0,
+        0,
+        -0.1
+      ],
+      "parent": "anchor",
+      "id": "wrist"
+    },
+    {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "shape": {
+        "segments": 6,
+        "type": "cylinder",
+        "radiusBottom": 0.12,
+        "radiusTop": 0.12,
+        "height": 0.8
+      },
+      "build": {
+        "order": 3
+      },
+      "id": "piston_l",
+      "parent": "forearm_cuff",
+      "position": [
+        0.6,
+        0,
+        0.8
+      ]
+    },
+    {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "id": "piston_r",
+      "parent": "forearm_cuff",
+      "build": {
+        "order": 3
+      },
+      "position": [
+        -0.6,
+        0,
+        0.8
+      ],
+      "shape": {
+        "height": 0.8,
+        "radiusTop": 0.12,
+        "type": "cylinder",
+        "radiusBottom": 0.12,
+        "segments": 6
+      }
+    },
+    {
+      "parent": "wrist",
+      "shape": {
+        "size": [
+          2.1,
+          1.4,
+          0.9
+        ],
+        "type": "box"
+      },
+      "build": {
+        "order": 4
+      },
+      "id": "palm",
+      "position": [
+        0,
+        0,
+        0.8
+      ]
+    },
+    {
+      "parent": "palm",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.8,
+          0.2,
+          0.8
+        ]
+      },
+      "position": [
+        0,
+        0.75,
+        -0.1
+      ],
+      "build": {
+        "order": 4
+      },
+      "id": "palm_shield"
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0.35
+      ],
+      "position": [
+        0.75,
+        0.4,
+        0.45
+      ],
+      "parent": "palm",
+      "build": {
+        "order": 5
+      },
+      "id": "ind_1",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.42,
+          0.7
+        ]
+      }
+    },
+    {
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "intensity": 2,
+      "position": [
+        0,
+        0.28,
+        0.1
+      ],
+      "shape": {
+        "type": "cone",
+        "radius": 0.15,
+        "segments": 5,
+        "height": 0.25
+      },
+      "id": "ind_k",
+      "parent": "ind_1",
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "shape": {
+        "type": "box",
+        "size": [
+          0.38,
+          0.38,
+          0.6
+        ]
+      },
+      "position": [
+        0,
+        0,
+        0.7
+      ],
+      "build": {
+        "order": 7
+      },
+      "id": "ind_2",
+      "parent": "ind_1",
+      "offset": [
+        0,
+        0,
+        0.3
+      ]
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0.22
+      ],
+      "id": "ind_3",
+      "position": [
+        0,
+        0,
+        0.6
+      ],
+      "parent": "ind_2",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.34,
+          0.34,
+          0.45
+        ]
+      },
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "position": [
+        0.25,
+        0.4,
+        0.45
+      ],
+      "build": {
+        "order": 5
+      },
+      "parent": "palm",
+      "shape": {
+        "size": [
+          0.42,
+          0.42,
+          0.76
+        ],
+        "type": "box"
+      },
+      "offset": [
+        0,
+        0,
+        0.38
+      ],
+      "id": "mid_1"
+    },
+    {
+      "id": "mid_k",
+      "parent": "mid_1",
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "shape": {
+        "radius": 0.15,
+        "segments": 5,
+        "height": 0.25,
+        "type": "cone"
+      },
+      "position": [
+        0,
+        0.28,
+        0.1
+      ],
+      "build": {
+        "order": 6
+      },
+      "intensity": 2
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0.32
+      ],
+      "parent": "mid_1",
+      "shape": {
+        "size": [
+          0.38,
+          0.38,
+          0.64
+        ],
+        "type": "box"
+      },
+      "position": [
+        0,
+        0,
+        0.76
+      ],
+      "build": {
+        "order": 7
+      },
+      "id": "mid_2"
+    },
+    {
+      "id": "mid_3",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.34,
+          0.34,
+          0.5
+        ]
+      },
+      "offset": [
+        0,
+        0,
+        0.25
+      ],
+      "position": [
+        0,
+        0,
+        0.64
+      ],
+      "build": {
+        "order": 8
+      },
+      "parent": "mid_2"
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0.36
+      ],
+      "id": "rng_1",
+      "parent": "palm",
+      "position": [
+        -0.25,
+        0.4,
+        0.45
+      ],
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.42,
+          0.72
+        ]
+      },
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "position": [
+        0,
+        0.28,
+        0.1
+      ],
+      "id": "rng_k",
+      "intensity": 2,
+      "build": {
+        "order": 6
+      },
+      "parent": "rng_1",
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "shape": {
+        "radius": 0.15,
+        "type": "cone",
+        "segments": 5,
+        "height": 0.25
+      }
+    },
+    {
+      "id": "rng_2",
+      "position": [
+        0,
+        0,
+        0.72
+      ],
+      "build": {
+        "order": 7
+      },
+      "offset": [
+        0,
+        0,
+        0.31
+      ],
+      "parent": "rng_1",
+      "shape": {
+        "size": [
+          0.38,
+          0.38,
+          0.62
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0.24
+      ],
+      "id": "rng_3",
+      "parent": "rng_2",
+      "shape": {
+        "size": [
+          0.34,
+          0.34,
+          0.48
+        ],
+        "type": "box"
+      },
+      "build": {
+        "order": 8
+      },
+      "position": [
+        0,
+        0,
+        0.62
+      ]
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0.31
+      ],
+      "position": [
+        -0.75,
+        0.4,
+        0.45
+      ],
+      "parent": "palm",
+      "build": {
+        "order": 5
+      },
+      "shape": {
+        "type": "box",
+        "size": [
+          0.4,
+          0.4,
+          0.62
+        ]
+      },
+      "id": "pnk_1"
+    },
+    {
+      "position": [
+        0,
+        0.26,
+        0.1
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 6
+      },
+      "id": "pnk_k",
+      "shape": {
+        "type": "cone",
+        "segments": 5,
+        "radius": 0.13,
+        "height": 0.22
+      },
+      "parent": "pnk_1",
+      "rotation": [
+        45,
+        0,
+        0
+      ]
+    },
+    {
+      "shape": {
+        "type": "box",
+        "size": [
+          0.36,
+          0.36,
+          0.52
+        ]
+      },
+      "build": {
+        "order": 7
+      },
+      "parent": "pnk_1",
+      "offset": [
+        0,
+        0,
+        0.26
+      ],
+      "id": "pnk_2",
+      "position": [
+        0,
+        0,
+        0.62
+      ]
+    },
+    {
+      "build": {
+        "order": 8
+      },
+      "position": [
+        0,
+        0,
+        0.52
+      ],
+      "parent": "pnk_2",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.32,
+          0.32,
+          0.42
+        ]
+      },
+      "offset": [
+        0,
+        0,
+        0.21
+      ],
+      "id": "pnk_3"
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "thb_1",
+      "shape": {
+        "size": [
+          0.45,
+          0.45,
+          0.65
+        ],
+        "type": "box"
+      },
+      "rotation": [
+        0,
+        -35,
+        -25
+      ],
+      "parent": "palm",
+      "position": [
+        1,
+        0,
+        -0.1
+      ],
+      "offset": [
+        0,
+        0,
+        0.32
+      ]
+    },
+    {
+      "id": "thb_2",
+      "offset": [
+        0,
+        0,
+        0.27
+      ],
+      "position": [
+        0,
+        0,
+        0.65
+      ],
+      "parent": "thb_1",
+      "build": {
+        "order": 7
+      },
+      "shape": {
+        "type": "box",
+        "size": [
+          0.4,
+          0.4,
+          0.55
+        ]
+      },
+      "rotation": [
+        0,
+        25,
+        0
+      ]
+    },
+    {
+      "parent": "thb_2",
+      "shape": {
+        "size": [
+          0.35,
+          0.35,
+          0.45
+        ],
+        "type": "box"
+      },
+      "build": {
+        "order": 8
+      },
+      "offset": [
+        0,
+        0,
+        0.22
+      ],
+      "position": [
+        0,
+        0,
+        0.55
+      ],
+      "rotation": [
+        0,
+        15,
+        0
+      ],
+      "id": "thb_3"
+    }
+  ],
+  "prompt": "a giant mech fist"
+}

@@ -1,0 +1,740 @@
+{
+  "forge": {
+    "duration": 8,
+    "ringPosition": [
+      0,
+      4,
+      5
+    ]
+  },
+  "version": 1,
+  "animations": [
+    {
+      "loop": "pingpong",
+      "duration": 0.3,
+      "property": "position",
+      "easing": "sine",
+      "part": "rocket_base",
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "value": [
+            0,
+            0.03,
+            0.01
+          ],
+          "t": 0.5
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "loop": "pingpong",
+      "property": "scale",
+      "duration": 0.4,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "value": [
+            1,
+            1,
+            1
+          ],
+          "t": 0
+        },
+        {
+          "t": 0.5,
+          "value": [
+            1.15,
+            1.4,
+            1.15
+          ]
+        },
+        {
+          "value": [
+            1,
+            1,
+            1
+          ],
+          "t": 1
+        }
+      ],
+      "part": "plume"
+    },
+    {
+      "property": "rotation",
+      "duration": 4,
+      "loop": "repeat",
+      "part": "ring_1",
+      "keyframes": [
+        {
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "t": 0
+        },
+        {
+          "value": [
+            360,
+            360,
+            0
+          ],
+          "t": 1
+        }
+      ],
+      "easing": "linear"
+    },
+    {
+      "easing": "linear",
+      "loop": "repeat",
+      "duration": 5,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -360,
+            -360,
+            0
+          ]
+        }
+      ],
+      "part": "ring_2",
+      "property": "rotation"
+    }
+  ],
+  "parts": [
+    {
+      "id": "rocket_base",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        1.8,
+        0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "position": [
+        0,
+        -0.1,
+        0
+      ],
+      "shape": {
+        "radiusBottom": 0.55,
+        "segments": 8,
+        "height": 1,
+        "radiusTop": 0.7,
+        "type": "cylinder"
+      },
+      "parent": "rocket_base",
+      "id": "booster",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "position": [
+        0,
+        0.9,
+        0
+      ],
+      "id": "cabin",
+      "build": {
+        "order": 0
+      },
+      "shape": {
+        "radiusTop": 0.7,
+        "height": 1,
+        "radiusBottom": 0.7,
+        "type": "cylinder",
+        "segments": 8
+      },
+      "parent": "rocket_base"
+    },
+    {
+      "scale": [
+        1,
+        1.4,
+        1
+      ],
+      "shape": {
+        "radius": 0.7,
+        "segments": 8,
+        "type": "sphere"
+      },
+      "build": {
+        "order": 1
+      },
+      "parent": "rocket_base",
+      "id": "dome",
+      "position": [
+        0,
+        1.5,
+        0
+      ]
+    },
+    {
+      "build": {
+        "order": 1
+      },
+      "position": [
+        0,
+        2.5,
+        0
+      ],
+      "shape": {
+        "segments": 8,
+        "height": 1,
+        "radius": 0.5,
+        "type": "cone"
+      },
+      "id": "nose_cone",
+      "parent": "rocket_base"
+    },
+    {
+      "position": [
+        0,
+        3.2,
+        0
+      ],
+      "id": "mast",
+      "build": {
+        "order": 2
+      },
+      "parent": "rocket_base",
+      "shape": {
+        "type": "cylinder",
+        "height": 0.6,
+        "radiusTop": 0.01,
+        "radiusBottom": 0.04
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "shape": {
+        "segments": 6,
+        "radius": 0.08,
+        "type": "sphere"
+      },
+      "position": [
+        0,
+        3.5,
+        0
+      ],
+      "parent": "rocket_base",
+      "id": "mast_tip",
+      "intensity": 3
+    },
+    {
+      "parent": "rocket_base",
+      "shape": {
+        "height": 0.6,
+        "radiusTop": 0.3,
+        "segments": 8,
+        "radiusBottom": 0.45,
+        "type": "cylinder"
+      },
+      "position": [
+        0,
+        -0.8,
+        0
+      ],
+      "build": {
+        "order": 1
+      },
+      "id": "nozzle"
+    },
+    {
+      "shape": {
+        "segments": 6,
+        "height": 0.8,
+        "radius": 0.35,
+        "type": "cone"
+      },
+      "id": "plume",
+      "intensity": 2.5,
+      "build": {
+        "order": 6
+      },
+      "position": [
+        0,
+        -1.4,
+        0
+      ],
+      "parent": "rocket_base",
+      "rotation": [
+        180,
+        0,
+        0
+      ]
+    },
+    {
+      "parent": "rocket_base",
+      "shape": {
+        "type": "group"
+      },
+      "build": {
+        "order": 3
+      },
+      "id": "fin_gp_a",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "build": {
+        "order": 3
+      },
+      "parent": "fin_gp_a",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.1,
+        "bevel": 0.02,
+        "outline": [
+          [
+            0.5,
+            1.2
+          ],
+          [
+            1.2,
+            0.6
+          ],
+          [
+            1.7,
+            -0.5
+          ],
+          [
+            1.5,
+            -1.8
+          ],
+          [
+            0.5,
+            -0.8
+          ]
+        ]
+      },
+      "id": "fin_a",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "parent": "rocket_base",
+      "id": "fin_gp_b",
+      "rotation": [
+        0,
+        120,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "shape": {
+        "type": "extrude",
+        "bevel": 0.02,
+        "depth": 0.1,
+        "outline": [
+          [
+            0.5,
+            1.2
+          ],
+          [
+            1.2,
+            0.6
+          ],
+          [
+            1.7,
+            -0.5
+          ],
+          [
+            1.5,
+            -1.8
+          ],
+          [
+            0.5,
+            -0.8
+          ]
+        ]
+      },
+      "id": "fin_b",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "parent": "fin_gp_b",
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "rotation": [
+        0,
+        240,
+        0
+      ],
+      "id": "fin_gp_c",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "parent": "rocket_base",
+      "build": {
+        "order": 3
+      }
+    },
+    {
+      "shape": {
+        "depth": 0.1,
+        "bevel": 0.02,
+        "outline": [
+          [
+            0.5,
+            1.2
+          ],
+          [
+            1.2,
+            0.6
+          ],
+          [
+            1.7,
+            -0.5
+          ],
+          [
+            1.5,
+            -1.8
+          ],
+          [
+            0.5,
+            -0.8
+          ]
+        ],
+        "type": "extrude"
+      },
+      "id": "fin_c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "build": {
+        "order": 3
+      },
+      "parent": "fin_gp_c",
+      "rotation": [
+        0,
+        90,
+        0
+      ]
+    },
+    {
+      "parent": "rocket_base",
+      "shape": {
+        "type": "torus",
+        "tube": 0.04,
+        "radius": 0.2,
+        "arc": 360
+      },
+      "build": {
+        "order": 2
+      },
+      "position": [
+        0,
+        1.4,
+        0.68
+      ],
+      "id": "win_frame_1"
+    },
+    {
+      "id": "win_glass_1",
+      "position": [
+        0,
+        1.4,
+        0.66
+      ],
+      "shape": {
+        "height": 0.05,
+        "radiusBottom": 0.18,
+        "radiusTop": 0.18,
+        "segments": 8,
+        "type": "cylinder"
+      },
+      "build": {
+        "order": 2
+      },
+      "parent": "rocket_base",
+      "intensity": 2,
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "win_frame_2",
+      "parent": "rocket_base",
+      "build": {
+        "order": 2
+      },
+      "shape": {
+        "type": "torus",
+        "radius": 0.14,
+        "tube": 0.03,
+        "arc": 360
+      },
+      "position": [
+        0,
+        0.6,
+        0.68
+      ]
+    },
+    {
+      "position": [
+        0,
+        0.6,
+        0.66
+      ],
+      "parent": "rocket_base",
+      "intensity": 2,
+      "shape": {
+        "segments": 8,
+        "height": 0.05,
+        "type": "cylinder",
+        "radiusBottom": 0.12,
+        "radiusTop": 0.12
+      },
+      "build": {
+        "order": 2
+      },
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "id": "win_glass_2"
+    },
+    {
+      "rotation": [
+        0,
+        60,
+        0
+      ],
+      "parent": "rocket_base",
+      "id": "pipe_gp_a",
+      "build": {
+        "order": 4
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "shape": {
+        "radiusBottom": 0.03,
+        "type": "cylinder",
+        "radiusTop": 0.03,
+        "height": 1.6
+      },
+      "position": [
+        0,
+        0.5,
+        0.68
+      ],
+      "parent": "pipe_gp_a",
+      "id": "pipe_a"
+    },
+    {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "parent": "rocket_base",
+      "id": "pipe_gp_b",
+      "shape": {
+        "type": "group"
+      },
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "shape": {
+        "type": "cylinder",
+        "height": 1.6,
+        "radiusTop": 0.03,
+        "radiusBottom": 0.03
+      },
+      "position": [
+        0,
+        0.5,
+        0.68
+      ],
+      "id": "pipe_b",
+      "build": {
+        "order": 4
+      },
+      "parent": "pipe_gp_b"
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      },
+      "id": "pipe_gp_c",
+      "rotation": [
+        0,
+        300,
+        0
+      ],
+      "parent": "rocket_base"
+    },
+    {
+      "id": "pipe_c",
+      "shape": {
+        "type": "cylinder",
+        "radiusBottom": 0.03,
+        "height": 1.6,
+        "radiusTop": 0.03
+      },
+      "position": [
+        0,
+        0.5,
+        0.68
+      ],
+      "build": {
+        "order": 4
+      },
+      "parent": "pipe_gp_c"
+    },
+    {
+      "shape": {
+        "radius": 1.1,
+        "arc": 360,
+        "tube": 0.03,
+        "type": "torus"
+      },
+      "rotation": [
+        70,
+        30,
+        10
+      ],
+      "build": {
+        "order": 5
+      },
+      "intensity": 1.5,
+      "parent": "rocket_base",
+      "id": "ring_1",
+      "position": [
+        0,
+        0.9,
+        0
+      ]
+    },
+    {
+      "rotation": [
+        -70,
+        -30,
+        -10
+      ],
+      "id": "ring_2",
+      "parent": "rocket_base",
+      "intensity": 1.5,
+      "shape": {
+        "type": "torus",
+        "tube": 0.03,
+        "radius": 1.18,
+        "arc": 360
+      },
+      "build": {
+        "order": 5
+      },
+      "position": [
+        0,
+        0.9,
+        0
+      ]
+    }
+  ],
+  "title": "Retro Sci-Fi Rocket",
+  "id": "20261007-211106_retro-sci-fi-rocket",
+  "prompt": "a rocket"
+}

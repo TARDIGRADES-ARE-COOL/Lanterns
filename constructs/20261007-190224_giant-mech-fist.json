@@ -1,0 +1,669 @@
+{
+  "version": 1,
+  "title": "Giant Mech Fist",
+  "parts": [
+    {
+      "id": "base",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 1.6,
+        "radiusBottom": 1.9,
+        "height": 0.4,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "fist",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0.4,
+        0
+      ]
+    },
+    {
+      "id": "forearm",
+      "parent": "fist",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.9,
+        "radiusBottom": 1.1,
+        "height": 2.2,
+        "segments": 8
+      },
+      "position": [
+        0,
+        1.1,
+        0
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "arm_ring1",
+      "parent": "forearm",
+      "shape": {
+        "type": "torus",
+        "radius": 1.05,
+        "tube": 0.1
+      },
+      "position": [
+        0,
+        -0.6,
+        0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "arm_ring2",
+      "parent": "forearm",
+      "shape": {
+        "type": "torus",
+        "radius": 0.95,
+        "tube": 0.1
+      },
+      "position": [
+        0,
+        0.6,
+        0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "piston_l",
+      "parent": "forearm",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.12,
+        "radiusBottom": 0.12,
+        "height": 2,
+        "segments": 8
+      },
+      "position": [
+        -1.05,
+        0.2,
+        0
+      ],
+      "build": {
+        "order": 25
+      }
+    },
+    {
+      "id": "piston_r",
+      "parent": "forearm",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.12,
+        "radiusBottom": 0.12,
+        "height": 2,
+        "segments": 8
+      },
+      "position": [
+        1.05,
+        0.2,
+        0
+      ],
+      "build": {
+        "order": 25
+      }
+    },
+    {
+      "id": "core",
+      "parent": "forearm",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.3,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0,
+        0.95
+      ],
+      "intensity": 2.5,
+      "build": {
+        "order": 90
+      }
+    },
+    {
+      "id": "wrist",
+      "parent": "fist",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.8,
+        "radiusBottom": 0.85,
+        "height": 0.4,
+        "segments": 12
+      },
+      "position": [
+        0,
+        2.4,
+        0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "hand",
+      "parent": "fist",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        2.6,
+        0
+      ]
+    },
+    {
+      "id": "palm",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          2,
+          1.6,
+          1.3
+        ]
+      },
+      "position": [
+        0,
+        0.8,
+        0
+      ],
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "knuckle_plate",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          2.1,
+          0.35,
+          0.5
+        ]
+      },
+      "position": [
+        0,
+        1.7,
+        0.55
+      ],
+      "build": {
+        "order": 60
+      }
+    },
+    {
+      "id": "f1_base",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.44,
+          0.6,
+          0.55
+        ]
+      },
+      "position": [
+        -0.75,
+        1.85,
+        0.1
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "f2_base",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.44,
+          0.6,
+          0.55
+        ]
+      },
+      "position": [
+        -0.25,
+        1.85,
+        0.1
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "f3_base",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.44,
+          0.6,
+          0.55
+        ]
+      },
+      "position": [
+        0.25,
+        1.85,
+        0.1
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "f4_base",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.44,
+          0.6,
+          0.55
+        ]
+      },
+      "position": [
+        0.75,
+        1.85,
+        0.1
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "f1_tip",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.5,
+          0.6
+        ]
+      },
+      "position": [
+        -0.75,
+        1.5,
+        0.85
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "f2_tip",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.5,
+          0.6
+        ]
+      },
+      "position": [
+        -0.25,
+        1.5,
+        0.85
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "f3_tip",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.5,
+          0.6
+        ]
+      },
+      "position": [
+        0.25,
+        1.5,
+        0.85
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "f4_tip",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.42,
+          0.5,
+          0.6
+        ]
+      },
+      "position": [
+        0.75,
+        1.5,
+        0.85
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "k1",
+      "parent": "hand",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.14,
+        "segments": 6
+      },
+      "position": [
+        -0.75,
+        2.05,
+        0.5
+      ],
+      "intensity": 1.8,
+      "build": {
+        "order": 80
+      }
+    },
+    {
+      "id": "k2",
+      "parent": "hand",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.14,
+        "segments": 6
+      },
+      "position": [
+        -0.25,
+        2.05,
+        0.5
+      ],
+      "intensity": 1.8,
+      "build": {
+        "order": 80
+      }
+    },
+    {
+      "id": "k3",
+      "parent": "hand",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.14,
+        "segments": 6
+      },
+      "position": [
+        0.25,
+        2.05,
+        0.5
+      ],
+      "intensity": 1.8,
+      "build": {
+        "order": 80
+      }
+    },
+    {
+      "id": "k4",
+      "parent": "hand",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.14,
+        "segments": 6
+      },
+      "position": [
+        0.75,
+        2.05,
+        0.5
+      ],
+      "intensity": 1.8,
+      "build": {
+        "order": 80
+      }
+    },
+    {
+      "id": "thumb_base",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.5,
+          0.9,
+          0.5
+        ]
+      },
+      "position": [
+        -1.15,
+        0.7,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        -25
+      ],
+      "build": {
+        "order": 65
+      }
+    },
+    {
+      "id": "thumb_tip",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.9,
+          0.4,
+          0.45
+        ]
+      },
+      "position": [
+        -0.6,
+        1.15,
+        0.75
+      ],
+      "rotation": [
+        0,
+        0,
+        15
+      ],
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "back_plate",
+      "parent": "hand",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            -0.9,
+            -0.6
+          ],
+          [
+            0.9,
+            -0.6
+          ],
+          [
+            0.8,
+            0.6
+          ],
+          [
+            -0.8,
+            0.6
+          ]
+        ],
+        "depth": 0.15
+      },
+      "position": [
+        0,
+        0.8,
+        -0.72
+      ],
+      "build": {
+        "order": 60
+      }
+    },
+    {
+      "id": "vent",
+      "parent": "hand",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.2,
+          0.12,
+          0.1
+        ]
+      },
+      "position": [
+        0,
+        0.8,
+        -0.82
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 85
+      }
+    }
+  ],
+  "animations": [
+    {
+      "part": "fist",
+      "property": "rotation",
+      "duration": 4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            -4,
+            -8,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            4,
+            8,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "core",
+      "property": "scale",
+      "duration": 1.5,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.3,
+            1.3,
+            1.3
+          ]
+        }
+      ]
+    },
+    {
+      "part": "hand",
+      "property": "position",
+      "duration": 2,
+      "loop": "pingpong",
+      "easing": "cubic",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "arm_ring1",
+      "property": "rotation",
+      "duration": 5,
+      "loop": "repeat",
+      "easing": "linear",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            360
+          ]
+        }
+      ]
+    }
+  ],
+  "forge": {
+    "duration": 7
+  },
+  "id": "20261007-190224_giant-mech-fist",
+  "prompt": "a giant mech fist"
+}

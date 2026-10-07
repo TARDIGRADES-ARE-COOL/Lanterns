@@ -1,0 +1,649 @@
+{
+  "animations": [
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -30,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "idx_m",
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -35,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "idx_t",
+      "phase": 0.2,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -30,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "mid_m",
+      "phase": 0.4,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -30,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "rng_m",
+      "phase": 0.6,
+      "property": "rotation"
+    },
+    {
+      "duration": 2,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -30,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "pky_m",
+      "phase": 0.8,
+      "property": "rotation"
+    },
+    {
+      "duration": 2.5,
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            -25,
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": "pingpong",
+      "part": "thb_m",
+      "property": "rotation"
+    }
+  ],
+  "forge": {
+    "duration": 7
+  },
+  "parts": [
+    {
+      "build": {
+        "order": 1
+      },
+      "id": "palm",
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          2,
+          0.5,
+          2
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 1
+      },
+      "id": "core",
+      "intensity": 3,
+      "parent": "palm",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "radius": 0.2,
+        "segments": 8,
+        "type": "sphere"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "idx",
+      "parent": "palm",
+      "position": [
+        -0.4,
+        0.5,
+        0.6
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "idx_p",
+      "offset": [
+        0,
+        0.3,
+        0
+      ],
+      "parent": "idx",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "height": 0.6,
+        "radiusBottom": 0.12,
+        "radiusTop": 0.12,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "idx_m",
+      "offset": [
+        0,
+        0.3,
+        0
+      ],
+      "parent": "idx_p",
+      "position": [
+        0,
+        0.6,
+        0
+      ],
+      "shape": {
+        "height": 0.6,
+        "radiusBottom": 0.12,
+        "radiusTop": 0.12,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "idx_t",
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "parent": "idx_m",
+      "position": [
+        0,
+        0.6,
+        0
+      ],
+      "shape": {
+        "height": 0.5,
+        "radiusBottom": 0.12,
+        "radiusTop": 0.12,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "mid",
+      "parent": "palm",
+      "position": [
+        0,
+        0.5,
+        0.7
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "mid_p",
+      "offset": [
+        0,
+        0.35,
+        0
+      ],
+      "parent": "mid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "height": 0.7,
+        "radiusBottom": 0.13,
+        "radiusTop": 0.13,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "mid_m",
+      "offset": [
+        0,
+        0.3,
+        0
+      ],
+      "parent": "mid_p",
+      "position": [
+        0,
+        0.7,
+        0
+      ],
+      "shape": {
+        "height": 0.6,
+        "radiusBottom": 0.13,
+        "radiusTop": 0.13,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "mid_t",
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "parent": "mid_m",
+      "position": [
+        0,
+        0.6,
+        0
+      ],
+      "shape": {
+        "height": 0.5,
+        "radiusBottom": 0.13,
+        "radiusTop": 0.13,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "rng",
+      "parent": "palm",
+      "position": [
+        0.4,
+        0.5,
+        0.6
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "rng_p",
+      "offset": [
+        0,
+        0.3,
+        0
+      ],
+      "parent": "rng",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "height": 0.6,
+        "radiusBottom": 0.12,
+        "radiusTop": 0.12,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "rng_m",
+      "offset": [
+        0,
+        0.3,
+        0
+      ],
+      "parent": "rng_p",
+      "position": [
+        0,
+        0.6,
+        0
+      ],
+      "shape": {
+        "height": 0.6,
+        "radiusBottom": 0.12,
+        "radiusTop": 0.12,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "rng_t",
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "parent": "rng_m",
+      "position": [
+        0,
+        0.6,
+        0
+      ],
+      "shape": {
+        "height": 0.5,
+        "radiusBottom": 0.12,
+        "radiusTop": 0.12,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "pky",
+      "parent": "palm",
+      "position": [
+        0.8,
+        0.5,
+        0.4
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "pky_p",
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "parent": "pky",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "height": 0.5,
+        "radiusBottom": 0.11,
+        "radiusTop": 0.11,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "pky_m",
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "parent": "pky_p",
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "shape": {
+        "height": 0.5,
+        "radiusBottom": 0.11,
+        "radiusTop": 0.11,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "pky_t",
+      "offset": [
+        0,
+        0.2,
+        0
+      ],
+      "parent": "pky_m",
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "shape": {
+        "height": 0.4,
+        "radiusBottom": 0.11,
+        "radiusTop": 0.11,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 2
+      },
+      "id": "thb",
+      "parent": "palm",
+      "position": [
+        -0.8,
+        0.5,
+        -0.5
+      ],
+      "rotation": [
+        -30,
+        30,
+        0
+      ],
+      "shape": {
+        "type": "group"
+      }
+    },
+    {
+      "build": {
+        "order": 3
+      },
+      "id": "thb_p",
+      "offset": [
+        0,
+        0.25,
+        0
+      ],
+      "parent": "thb",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": {
+        "height": 0.5,
+        "radiusBottom": 0.13,
+        "radiusTop": 0.13,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 4
+      },
+      "id": "thb_m",
+      "offset": [
+        0,
+        0.2,
+        0
+      ],
+      "parent": "thb_p",
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "shape": {
+        "height": 0.4,
+        "radiusBottom": 0.13,
+        "radiusTop": 0.13,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 5
+      },
+      "id": "thb_t",
+      "offset": [
+        0,
+        0.15,
+        0
+      ],
+      "parent": "thb_m",
+      "position": [
+        0,
+        0.4,
+        0
+      ],
+      "shape": {
+        "height": 0.3,
+        "radiusBottom": 0.13,
+        "radiusTop": 0.13,
+        "segments": 8,
+        "type": "cylinder"
+      }
+    }
+  ],
+  "title": "Giant Mech Fist",
+  "version": 1,
+  "id": "20261007-175410_giant-mech-fist",
+  "prompt": "a giant mech fist"
+}

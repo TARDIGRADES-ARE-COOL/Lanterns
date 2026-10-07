@@ -1,0 +1,623 @@
+{
+  "version": 1,
+  "title": "Giant Mech Fist",
+  "parts": [
+    {
+      "id": "c_forearm",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "forearm_bp",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.4,
+          0.05,
+          0.4
+        ]
+      },
+      "position": [
+        0.0,
+        0.03,
+        0.0
+      ],
+      "parent": "c_forearm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "forearm_core",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.12,
+        "radiusBottom": 0.12,
+        "height": 2,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "intensity": 2.5,
+      "parent": "c_forearm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "forearm_seg1",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.18,
+        "radiusBottom": 0.18,
+        "height": 0.45,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.23,
+        0.0
+      ],
+      "parent": "c_forearm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "forearm_seg2",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.18,
+        "radiusBottom": 0.18,
+        "height": 0.45,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.68,
+        0.0
+      ],
+      "parent": "c_forearm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "forearm_seg3",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.18,
+        "radiusBottom": 0.18,
+        "height": 0.45,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        1.13,
+        0.0
+      ],
+      "parent": "c_forearm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "forearm_seg4",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.18,
+        "radiusBottom": 0.18,
+        "height": 0.45,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        1.58,
+        0.0
+      ],
+      "parent": "c_forearm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "forearm_rib1",
+      "shape": {
+        "type": "torus",
+        "radius": 0.18,
+        "tube": 0.02,
+        "arc": 360
+      },
+      "position": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "parent": "c_forearm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "forearm_rib2",
+      "shape": {
+        "type": "torus",
+        "radius": 0.18,
+        "tube": 0.02,
+        "arc": 360
+      },
+      "position": [
+        0.0,
+        1.5,
+        0.0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "parent": "c_forearm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "forearm_joint",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.15,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        1.85,
+        0.0
+      ],
+      "intensity": 2,
+      "parent": "c_forearm",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "c_palm",
+      "parent": "c_forearm",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0.0,
+        2.0,
+        0.0
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "palm_body",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.16,
+          0.34,
+          0.8
+        ]
+      },
+      "position": [
+        0.0,
+        0.2,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parent": "c_palm",
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "palm_center_plate",
+      "parent": "palm_body",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.25,
+        "radiusBottom": 0.25,
+        "height": 0.06,
+        "segments": 8
+      },
+      "position": [
+        0.0,
+        0.0,
+        0.05
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "intensity": 1.9,
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "palm_upper_bulge",
+      "parent": "palm_body",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.9,
+          0.08,
+          0.6
+        ]
+      },
+      "position": [
+        0.0,
+        0.2,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "palm_lower_bulge",
+      "parent": "palm_body",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.95,
+          0.08,
+          0.7
+        ]
+      },
+      "position": [
+        0.0,
+        0.2,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "palm_back_plate",
+      "parent": "palm_body",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.3,
+        "radiusBottom": 0.3,
+        "height": 0.04,
+        "segments": 8
+      },
+      "position": [
+        0.0,
+        0.0,
+        -0.41
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "intensity": 1.5,
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "palm_wrist_heel",
+      "parent": "palm_body",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.2,
+        "radiusBottom": 0.2,
+        "height": 0.06,
+        "segments": 8
+      },
+      "position": [
+        0.0,
+        -0.17,
+        0.0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "intensity": 1.6,
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "palm_side_arm_l",
+      "parent": "palm_body",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.08,
+          0.12,
+          0.4
+        ]
+      },
+      "position": [
+        0.55,
+        0.2,
+        0.0
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "c_thumb",
+      "parent": "c_palm",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0.55,
+        0.2,
+        -0.3
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "thumb_b0",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.4,
+          0.05,
+          0.2
+        ]
+      },
+      "position": [
+        0.0,
+        0.03,
+        0.0
+      ],
+      "offset": [
+        0,
+        -0.025,
+        0
+      ],
+      "intensity": 2,
+      "parent": "c_thumb",
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "thumb_p1",
+      "parent": "thumb_b0",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.18,
+        "radiusBottom": 0.18,
+        "height": 0.21,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.16,
+        0.0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "thumb_k1",
+      "parent": "thumb_b0",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.05,
+        "segments": 8
+      },
+      "position": [
+        0.0,
+        0.26,
+        0.0
+      ],
+      "intensity": 2.5,
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "thumb_p2",
+      "parent": "thumb_b0",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.18,
+        "radiusBottom": 0.18,
+        "height": 0.21,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.37,
+        0.0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "thumb_k2",
+      "parent": "thumb_b0",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.05,
+        "segments": 8
+      },
+      "position": [
+        0.0,
+        0.48,
+        0.0
+      ],
+      "intensity": 2.5,
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "thumb_p3",
+      "parent": "thumb_b0",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.18,
+        "radiusBottom": 0.18,
+        "height": 0.21,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.58,
+        0.0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "thumb_k3",
+      "parent": "thumb_b0",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.05,
+        "segments": 8
+      },
+      "position": [
+        0.0,
+        0.69,
+        0.0
+      ],
+      "intensity": 2.5,
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "thumb_p4",
+      "parent": "thumb_b0",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.18,
+        "radiusBottom": 0.18,
+        "height": 0.21,
+        "segments": 12
+      },
+      "position": [
+        0.0,
+        0.79,
+        0.0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 0
+      }
+    }
+  ],
+  "animations": [
+    {
+      "property": "rotation",
+      "duration": 4,
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            -5,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            5,
+            0,
+            0
+          ]
+        }
+      ],
+      "part": "c_forearm"
+    },
+    {
+      "part": "thumb_b0",
+      "property": "rotation",
+      "duration": 1,
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            0,
+            10,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "forge": {
+    "duration": 8
+  },
+  "id": "20261007-181452_giant-mech-fist",
+  "prompt": "a giant mech fist"
+}

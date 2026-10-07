@@ -1,0 +1,124 @@
+{
+  "id": "20261007-150513_simple-wooden-table",
+  "parts": [
+    {
+      "build": {
+        "order": 25
+      },
+      "id": "base_left",
+      "position": [
+        0.4,
+        -0.125,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.2,
+          0.05,
+          0.75
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 30
+      },
+      "id": "base_right",
+      "parent": "base_left",
+      "position": [
+        -0.6,
+        -0.4875,
+        0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          0.2,
+          0.05,
+          0.75
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 35
+      },
+      "id": "back_stretcher",
+      "position": [
+        0,
+        -0.244786,
+        0
+      ],
+      "scale": [
+        1,
+        29,
+        2
+      ],
+      "shape": {
+        "height": 0.65,
+        "radiusBottom": 0.03,
+        "radiusTop": 0.03,
+        "type": "cylinder"
+      }
+    },
+    {
+      "build": {
+        "order": 40
+      },
+      "id": "side_stretchers",
+      "parent": "back_stretcher",
+      "position": [
+        -0.4,
+        -0.264786,
+        0
+      ],
+      "rotation": [
+        -90,
+        0,
+        180
+      ],
+      "shape": {
+        "size": [
+          0.2,
+          0.05,
+          0.6
+        ],
+        "type": "box"
+      }
+    },
+    {
+      "build": {
+        "order": 45
+      },
+      "id": "top_1",
+      "parent": "side_stretchers",
+      "position": [
+        -0.315479,
+        0.264786,
+        -0.0074645698898494
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "shape": {
+        "size": [
+          1.2,
+          0.1,
+          0.8
+        ],
+        "type": "box"
+      }
+    }
+  ],
+  "prompt": "a simple wooden table",
+  "title": "Simple Wooden Table",
+  "version": 1
+}

@@ -1,0 +1,12 @@
+# secrets
+.env
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# per-user state (free-model limits, best-of scoreboard)
+constructs/.free_status.json
+constructs/.model_stats.json
+constructs/.parts_index.json

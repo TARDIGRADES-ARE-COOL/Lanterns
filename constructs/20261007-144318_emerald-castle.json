@@ -1,0 +1,2015 @@
+{
+  "version": 1,
+  "id": "20261007-144318_emerald-castle",
+  "title": "Emerald Castle",
+  "prompt": "a castle",
+  "notes": "Square curtain wall with four round corner towers, a gatehouse with portcullis and drawbridge, and a central keep with a glowing beacon.",
+  "forge": {
+    "duration": 9
+  },
+  "parts": [
+    {
+      "id": "castle",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "base",
+      "parent": "castle",
+      "shape": {
+        "type": "box",
+        "size": [
+          10.4,
+          0.3,
+          10.4
+        ]
+      },
+      "position": [
+        0,
+        0.15,
+        0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "wall_n",
+      "parent": "castle",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.6,
+        "outline": [
+          [
+            -3.5,
+            0
+          ],
+          [
+            3.5,
+            0
+          ],
+          [
+            3.5,
+            3.5
+          ],
+          [
+            2.722,
+            3.5
+          ],
+          [
+            2.722,
+            3
+          ],
+          [
+            1.944,
+            3
+          ],
+          [
+            1.944,
+            3.5
+          ],
+          [
+            1.167,
+            3.5
+          ],
+          [
+            1.167,
+            3
+          ],
+          [
+            0.389,
+            3
+          ],
+          [
+            0.389,
+            3.5
+          ],
+          [
+            -0.389,
+            3.5
+          ],
+          [
+            -0.389,
+            3
+          ],
+          [
+            -1.167,
+            3
+          ],
+          [
+            -1.167,
+            3.5
+          ],
+          [
+            -1.944,
+            3.5
+          ],
+          [
+            -1.944,
+            3
+          ],
+          [
+            -2.722,
+            3
+          ],
+          [
+            -2.722,
+            3.5
+          ],
+          [
+            -3.5,
+            3.5
+          ]
+        ]
+      },
+      "position": [
+        0,
+        0.3,
+        -4
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "wall_e",
+      "parent": "castle",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.6,
+        "outline": [
+          [
+            -3.5,
+            0
+          ],
+          [
+            3.5,
+            0
+          ],
+          [
+            3.5,
+            3.5
+          ],
+          [
+            2.722,
+            3.5
+          ],
+          [
+            2.722,
+            3
+          ],
+          [
+            1.944,
+            3
+          ],
+          [
+            1.944,
+            3.5
+          ],
+          [
+            1.167,
+            3.5
+          ],
+          [
+            1.167,
+            3
+          ],
+          [
+            0.389,
+            3
+          ],
+          [
+            0.389,
+            3.5
+          ],
+          [
+            -0.389,
+            3.5
+          ],
+          [
+            -0.389,
+            3
+          ],
+          [
+            -1.167,
+            3
+          ],
+          [
+            -1.167,
+            3.5
+          ],
+          [
+            -1.944,
+            3.5
+          ],
+          [
+            -1.944,
+            3
+          ],
+          [
+            -2.722,
+            3
+          ],
+          [
+            -2.722,
+            3.5
+          ],
+          [
+            -3.5,
+            3.5
+          ]
+        ]
+      },
+      "position": [
+        4,
+        0.3,
+        0
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "wall_w",
+      "parent": "castle",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.6,
+        "outline": [
+          [
+            -3.5,
+            0
+          ],
+          [
+            3.5,
+            0
+          ],
+          [
+            3.5,
+            3.5
+          ],
+          [
+            2.722,
+            3.5
+          ],
+          [
+            2.722,
+            3
+          ],
+          [
+            1.944,
+            3
+          ],
+          [
+            1.944,
+            3.5
+          ],
+          [
+            1.167,
+            3.5
+          ],
+          [
+            1.167,
+            3
+          ],
+          [
+            0.389,
+            3
+          ],
+          [
+            0.389,
+            3.5
+          ],
+          [
+            -0.389,
+            3.5
+          ],
+          [
+            -0.389,
+            3
+          ],
+          [
+            -1.167,
+            3
+          ],
+          [
+            -1.167,
+            3.5
+          ],
+          [
+            -1.944,
+            3.5
+          ],
+          [
+            -1.944,
+            3
+          ],
+          [
+            -2.722,
+            3
+          ],
+          [
+            -2.722,
+            3.5
+          ],
+          [
+            -3.5,
+            3.5
+          ]
+        ]
+      },
+      "position": [
+        -4,
+        0.3,
+        0
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "wall_s_l",
+      "parent": "castle",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.6,
+        "outline": [
+          [
+            -0.95,
+            0
+          ],
+          [
+            0.95,
+            0
+          ],
+          [
+            0.95,
+            3.5
+          ],
+          [
+            0.57,
+            3.5
+          ],
+          [
+            0.57,
+            3
+          ],
+          [
+            0.19,
+            3
+          ],
+          [
+            0.19,
+            3.5
+          ],
+          [
+            -0.19,
+            3.5
+          ],
+          [
+            -0.19,
+            3
+          ],
+          [
+            -0.57,
+            3
+          ],
+          [
+            -0.57,
+            3.5
+          ],
+          [
+            -0.95,
+            3.5
+          ]
+        ]
+      },
+      "position": [
+        -2.55,
+        0.3,
+        4
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "wall_s_r",
+      "parent": "castle",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.6,
+        "outline": [
+          [
+            -0.95,
+            0
+          ],
+          [
+            0.95,
+            0
+          ],
+          [
+            0.95,
+            3.5
+          ],
+          [
+            0.57,
+            3.5
+          ],
+          [
+            0.57,
+            3
+          ],
+          [
+            0.19,
+            3
+          ],
+          [
+            0.19,
+            3.5
+          ],
+          [
+            -0.19,
+            3.5
+          ],
+          [
+            -0.19,
+            3
+          ],
+          [
+            -0.57,
+            3
+          ],
+          [
+            -0.57,
+            3.5
+          ],
+          [
+            -0.95,
+            3.5
+          ]
+        ]
+      },
+      "position": [
+        2.55,
+        0.3,
+        4
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "tower_ne",
+      "parent": "castle",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        4,
+        0.3,
+        -4
+      ]
+    },
+    {
+      "id": "tower_ne_body",
+      "parent": "tower_ne",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.9,
+        "radiusBottom": 1.0,
+        "height": 4.5,
+        "segments": 8
+      },
+      "position": [
+        0,
+        2.25,
+        0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "tower_ne_crown",
+      "parent": "tower_ne",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 1.15,
+        "radiusBottom": 1.0,
+        "height": 0.5,
+        "segments": 8
+      },
+      "position": [
+        0,
+        4.75,
+        0
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "tower_ne_roof",
+      "parent": "tower_ne",
+      "shape": {
+        "type": "cone",
+        "radius": 1.2,
+        "height": 2.2,
+        "segments": 8
+      },
+      "position": [
+        0,
+        6.1,
+        0
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "tower_ne_slit",
+      "parent": "tower_ne",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.8,
+          0.25
+        ]
+      },
+      "position": [
+        0.636,
+        2.8,
+        -0.636
+      ],
+      "rotation": [
+        0,
+        135,
+        0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "tower_ne_pole",
+      "parent": "tower_ne",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.04,
+        "radiusBottom": 0.04,
+        "height": 1.2,
+        "segments": 6
+      },
+      "position": [
+        0,
+        7.6,
+        0
+      ],
+      "build": {
+        "order": 80
+      }
+    },
+    {
+      "id": "tower_ne_flag",
+      "parent": "tower_ne",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.03,
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.8,
+            -0.15
+          ],
+          [
+            0,
+            -0.4
+          ]
+        ]
+      },
+      "position": [
+        0,
+        8.15,
+        0
+      ],
+      "intensity": 1.5,
+      "build": {
+        "order": 85
+      }
+    },
+    {
+      "id": "tower_nw",
+      "parent": "castle",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        -4,
+        0.3,
+        -4
+      ]
+    },
+    {
+      "id": "tower_nw_body",
+      "parent": "tower_nw",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.9,
+        "radiusBottom": 1.0,
+        "height": 4.5,
+        "segments": 8
+      },
+      "position": [
+        0,
+        2.25,
+        0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "tower_nw_crown",
+      "parent": "tower_nw",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 1.15,
+        "radiusBottom": 1.0,
+        "height": 0.5,
+        "segments": 8
+      },
+      "position": [
+        0,
+        4.75,
+        0
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "tower_nw_roof",
+      "parent": "tower_nw",
+      "shape": {
+        "type": "cone",
+        "radius": 1.2,
+        "height": 2.2,
+        "segments": 8
+      },
+      "position": [
+        0,
+        6.1,
+        0
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "tower_nw_slit",
+      "parent": "tower_nw",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.8,
+          0.25
+        ]
+      },
+      "position": [
+        -0.636,
+        2.8,
+        -0.636
+      ],
+      "rotation": [
+        0,
+        -135,
+        0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "tower_nw_pole",
+      "parent": "tower_nw",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.04,
+        "radiusBottom": 0.04,
+        "height": 1.2,
+        "segments": 6
+      },
+      "position": [
+        0,
+        7.6,
+        0
+      ],
+      "build": {
+        "order": 80
+      }
+    },
+    {
+      "id": "tower_nw_flag",
+      "parent": "tower_nw",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.03,
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.8,
+            -0.15
+          ],
+          [
+            0,
+            -0.4
+          ]
+        ]
+      },
+      "position": [
+        0,
+        8.15,
+        0
+      ],
+      "intensity": 1.5,
+      "build": {
+        "order": 85
+      }
+    },
+    {
+      "id": "tower_se",
+      "parent": "castle",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        4,
+        0.3,
+        4
+      ]
+    },
+    {
+      "id": "tower_se_body",
+      "parent": "tower_se",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.9,
+        "radiusBottom": 1.0,
+        "height": 4.5,
+        "segments": 8
+      },
+      "position": [
+        0,
+        2.25,
+        0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "tower_se_crown",
+      "parent": "tower_se",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 1.15,
+        "radiusBottom": 1.0,
+        "height": 0.5,
+        "segments": 8
+      },
+      "position": [
+        0,
+        4.75,
+        0
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "tower_se_roof",
+      "parent": "tower_se",
+      "shape": {
+        "type": "cone",
+        "radius": 1.2,
+        "height": 2.2,
+        "segments": 8
+      },
+      "position": [
+        0,
+        6.1,
+        0
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "tower_se_slit",
+      "parent": "tower_se",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.8,
+          0.25
+        ]
+      },
+      "position": [
+        0.636,
+        2.8,
+        0.636
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "tower_se_pole",
+      "parent": "tower_se",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.04,
+        "radiusBottom": 0.04,
+        "height": 1.2,
+        "segments": 6
+      },
+      "position": [
+        0,
+        7.6,
+        0
+      ],
+      "build": {
+        "order": 80
+      }
+    },
+    {
+      "id": "tower_se_flag",
+      "parent": "tower_se",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.03,
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.8,
+            -0.15
+          ],
+          [
+            0,
+            -0.4
+          ]
+        ]
+      },
+      "position": [
+        0,
+        8.15,
+        0
+      ],
+      "intensity": 1.5,
+      "build": {
+        "order": 85
+      }
+    },
+    {
+      "id": "tower_sw",
+      "parent": "castle",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        -4,
+        0.3,
+        4
+      ]
+    },
+    {
+      "id": "tower_sw_body",
+      "parent": "tower_sw",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.9,
+        "radiusBottom": 1.0,
+        "height": 4.5,
+        "segments": 8
+      },
+      "position": [
+        0,
+        2.25,
+        0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "tower_sw_crown",
+      "parent": "tower_sw",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 1.15,
+        "radiusBottom": 1.0,
+        "height": 0.5,
+        "segments": 8
+      },
+      "position": [
+        0,
+        4.75,
+        0
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "tower_sw_roof",
+      "parent": "tower_sw",
+      "shape": {
+        "type": "cone",
+        "radius": 1.2,
+        "height": 2.2,
+        "segments": 8
+      },
+      "position": [
+        0,
+        6.1,
+        0
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "tower_sw_slit",
+      "parent": "tower_sw",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.14,
+          0.8,
+          0.25
+        ]
+      },
+      "position": [
+        -0.636,
+        2.8,
+        0.636
+      ],
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "tower_sw_pole",
+      "parent": "tower_sw",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.04,
+        "radiusBottom": 0.04,
+        "height": 1.2,
+        "segments": 6
+      },
+      "position": [
+        0,
+        7.6,
+        0
+      ],
+      "build": {
+        "order": 80
+      }
+    },
+    {
+      "id": "tower_sw_flag",
+      "parent": "tower_sw",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.03,
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.8,
+            -0.15
+          ],
+          [
+            0,
+            -0.4
+          ]
+        ]
+      },
+      "position": [
+        0,
+        8.15,
+        0
+      ],
+      "intensity": 1.5,
+      "build": {
+        "order": 85
+      }
+    },
+    {
+      "id": "gatehouse",
+      "parent": "castle",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0.3,
+        4
+      ]
+    },
+    {
+      "id": "gate_tower_l",
+      "parent": "gatehouse",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.0,
+          4.2,
+          1.4
+        ]
+      },
+      "position": [
+        -1.1,
+        2.1,
+        0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "gate_tower_r",
+      "parent": "gatehouse",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.0,
+          4.2,
+          1.4
+        ]
+      },
+      "position": [
+        1.1,
+        2.1,
+        0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "gate_lintel",
+      "parent": "gatehouse",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.2,
+          1.4,
+          1.2
+        ]
+      },
+      "position": [
+        0,
+        3.5,
+        0
+      ],
+      "build": {
+        "order": 35
+      }
+    },
+    {
+      "id": "gate_arch",
+      "parent": "gatehouse",
+      "shape": {
+        "type": "torus",
+        "radius": 0.6,
+        "tube": 0.1,
+        "arc": 180
+      },
+      "position": [
+        0,
+        2.2,
+        0.65
+      ],
+      "intensity": 1.5,
+      "build": {
+        "order": 35
+      }
+    },
+    {
+      "id": "gate_roof_l",
+      "parent": "gatehouse",
+      "shape": {
+        "type": "cone",
+        "radius": 0.85,
+        "height": 1.2,
+        "segments": 4
+      },
+      "position": [
+        -1.1,
+        4.8,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "gate_roof_r",
+      "parent": "gatehouse",
+      "shape": {
+        "type": "cone",
+        "radius": 0.85,
+        "height": 1.2,
+        "segments": 4
+      },
+      "position": [
+        1.1,
+        4.8,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "gate_shield",
+      "parent": "gatehouse",
+      "shape": {
+        "type": "extrude",
+        "depth": 0.08,
+        "outline": [
+          [
+            -0.35,
+            0.3
+          ],
+          [
+            0.35,
+            0.3
+          ],
+          [
+            0.35,
+            0
+          ],
+          [
+            0,
+            -0.4
+          ],
+          [
+            -0.35,
+            0
+          ]
+        ]
+      },
+      "position": [
+        0,
+        3.55,
+        0.63
+      ],
+      "intensity": 2.2,
+      "build": {
+        "order": 75
+      }
+    },
+    {
+      "id": "portcullis",
+      "parent": "gatehouse",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0,
+        0.45
+      ]
+    },
+    {
+      "id": "portc_bar1",
+      "parent": "portcullis",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.045,
+        "radiusBottom": 0.045,
+        "height": 2.7,
+        "segments": 6
+      },
+      "position": [
+        -0.42,
+        1.35,
+        0
+      ],
+      "build": {
+        "order": 60
+      }
+    },
+    {
+      "id": "portc_bar2",
+      "parent": "portcullis",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.045,
+        "radiusBottom": 0.045,
+        "height": 2.7,
+        "segments": 6
+      },
+      "position": [
+        -0.14,
+        1.35,
+        0
+      ],
+      "build": {
+        "order": 60
+      }
+    },
+    {
+      "id": "portc_bar3",
+      "parent": "portcullis",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.045,
+        "radiusBottom": 0.045,
+        "height": 2.7,
+        "segments": 6
+      },
+      "position": [
+        0.14,
+        1.35,
+        0
+      ],
+      "build": {
+        "order": 60
+      }
+    },
+    {
+      "id": "portc_bar4",
+      "parent": "portcullis",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.045,
+        "radiusBottom": 0.045,
+        "height": 2.7,
+        "segments": 6
+      },
+      "position": [
+        0.42,
+        1.35,
+        0
+      ],
+      "build": {
+        "order": 60
+      }
+    },
+    {
+      "id": "portc_rail1",
+      "parent": "portcullis",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.15,
+          0.07,
+          0.07
+        ]
+      },
+      "position": [
+        0,
+        0.7,
+        0
+      ],
+      "build": {
+        "order": 62
+      }
+    },
+    {
+      "id": "portc_rail2",
+      "parent": "portcullis",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.15,
+          0.07,
+          0.07
+        ]
+      },
+      "position": [
+        0,
+        1.5,
+        0
+      ],
+      "build": {
+        "order": 62
+      }
+    },
+    {
+      "id": "portc_rail3",
+      "parent": "portcullis",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.15,
+          0.07,
+          0.07
+        ]
+      },
+      "position": [
+        0,
+        2.3,
+        0
+      ],
+      "build": {
+        "order": 62
+      }
+    },
+    {
+      "id": "drawbridge",
+      "parent": "gatehouse",
+      "shape": {
+        "type": "box",
+        "size": [
+          1.2,
+          0.12,
+          1.4
+        ]
+      },
+      "position": [
+        0,
+        0.06,
+        0.7
+      ],
+      "rotation": [
+        15,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0.7
+      ],
+      "build": {
+        "order": 62
+      }
+    },
+    {
+      "id": "keep",
+      "parent": "castle",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0.3,
+        -0.8
+      ]
+    },
+    {
+      "id": "keep_body",
+      "parent": "keep",
+      "shape": {
+        "type": "box",
+        "size": [
+          3,
+          5.5,
+          3
+        ]
+      },
+      "position": [
+        0,
+        2.75,
+        0
+      ],
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "keep_parapet",
+      "parent": "keep",
+      "shape": {
+        "type": "box",
+        "size": [
+          3.3,
+          0.4,
+          3.3
+        ]
+      },
+      "position": [
+        0,
+        5.7,
+        0
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "keep_roof",
+      "parent": "keep",
+      "shape": {
+        "type": "cone",
+        "radius": 2.2,
+        "height": 2.4,
+        "segments": 4
+      },
+      "position": [
+        0,
+        7.1,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "build": {
+        "order": 55
+      }
+    },
+    {
+      "id": "keep_turret_ne",
+      "parent": "keep",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.4,
+        "radiusBottom": 0.4,
+        "height": 2.0,
+        "segments": 8
+      },
+      "position": [
+        1.6,
+        5.9,
+        -1.6
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "keep_turret_nw",
+      "parent": "keep",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.4,
+        "radiusBottom": 0.4,
+        "height": 2.0,
+        "segments": 8
+      },
+      "position": [
+        -1.6,
+        5.9,
+        -1.6
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "keep_turret_se",
+      "parent": "keep",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.4,
+        "radiusBottom": 0.4,
+        "height": 2.0,
+        "segments": 8
+      },
+      "position": [
+        1.6,
+        5.9,
+        1.6
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "keep_turret_sw",
+      "parent": "keep",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.4,
+        "radiusBottom": 0.4,
+        "height": 2.0,
+        "segments": 8
+      },
+      "position": [
+        -1.6,
+        5.9,
+        1.6
+      ],
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "keep_cap_ne",
+      "parent": "keep",
+      "shape": {
+        "type": "cone",
+        "radius": 0.5,
+        "height": 1.0,
+        "segments": 8
+      },
+      "position": [
+        1.6,
+        7.4,
+        -1.6
+      ],
+      "build": {
+        "order": 58
+      }
+    },
+    {
+      "id": "keep_cap_nw",
+      "parent": "keep",
+      "shape": {
+        "type": "cone",
+        "radius": 0.5,
+        "height": 1.0,
+        "segments": 8
+      },
+      "position": [
+        -1.6,
+        7.4,
+        -1.6
+      ],
+      "build": {
+        "order": 58
+      }
+    },
+    {
+      "id": "keep_cap_se",
+      "parent": "keep",
+      "shape": {
+        "type": "cone",
+        "radius": 0.5,
+        "height": 1.0,
+        "segments": 8
+      },
+      "position": [
+        1.6,
+        7.4,
+        1.6
+      ],
+      "build": {
+        "order": 58
+      }
+    },
+    {
+      "id": "keep_cap_sw",
+      "parent": "keep",
+      "shape": {
+        "type": "cone",
+        "radius": 0.5,
+        "height": 1.0,
+        "segments": 8
+      },
+      "position": [
+        -1.6,
+        7.4,
+        1.6
+      ],
+      "build": {
+        "order": 58
+      }
+    },
+    {
+      "id": "keep_door",
+      "parent": "keep",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.9,
+          1.5,
+          0.1
+        ]
+      },
+      "position": [
+        0,
+        0.75,
+        1.52
+      ],
+      "intensity": 1.3,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "keep_door_arch",
+      "parent": "keep",
+      "shape": {
+        "type": "torus",
+        "radius": 0.45,
+        "tube": 0.06,
+        "arc": 180
+      },
+      "position": [
+        0,
+        1.5,
+        1.53
+      ],
+      "intensity": 1.5,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "keep_window_l",
+      "parent": "keep",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.7,
+          0.1
+        ]
+      },
+      "position": [
+        -0.8,
+        3.8,
+        1.52
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "keep_window_c",
+      "parent": "keep",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.7,
+          0.1
+        ]
+      },
+      "position": [
+        0,
+        3.8,
+        1.52
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "keep_window_r",
+      "parent": "keep",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.7,
+          0.1
+        ]
+      },
+      "position": [
+        0.8,
+        3.8,
+        1.52
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "keep_window_e",
+      "parent": "keep",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.1,
+          0.7,
+          0.3
+        ]
+      },
+      "position": [
+        1.52,
+        3.8,
+        0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "keep_window_w",
+      "parent": "keep",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.1,
+          0.7,
+          0.3
+        ]
+      },
+      "position": [
+        -1.52,
+        3.8,
+        0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 70
+      }
+    },
+    {
+      "id": "beacon",
+      "parent": "keep",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.3,
+        "segments": 8
+      },
+      "position": [
+        0,
+        8.8,
+        0
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 90
+      }
+    },
+    {
+      "id": "beacon_ring",
+      "parent": "keep",
+      "shape": {
+        "type": "torus",
+        "radius": 0.55,
+        "tube": 0.03
+      },
+      "position": [
+        0,
+        8.8,
+        0
+      ],
+      "rotation": [
+        70,
+        0,
+        0
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 90
+      }
+    }
+  ],
+  "animations": [
+    {
+      "part": "tower_ne_flag",
+      "property": "rotation",
+      "duration": 2.4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -12,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            12,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "tower_nw_flag",
+      "property": "rotation",
+      "duration": 2.4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.25,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -12,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            12,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "tower_se_flag",
+      "property": "rotation",
+      "duration": 2.4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.5,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -12,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            12,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "tower_sw_flag",
+      "property": "rotation",
+      "duration": 2.4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "phase": 0.75,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -12,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            12,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "portcullis",
+      "property": "position",
+      "duration": 8,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.3,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.7,
+          "value": [
+            0,
+            1.5,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            1.5,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "beacon",
+      "property": "scale",
+      "duration": 2,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      ]
+    },
+    {
+      "part": "beacon_ring",
+      "property": "rotation",
+      "duration": 6,
+      "loop": "repeat",
+      "easing": "linear",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            360,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,819 @@
+{
+  "version": 1,
+  "title": "Starfang Interceptor",
+  "parts": [
+    {
+      "id": "ship",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        2.2,
+        0
+      ]
+    },
+    {
+      "id": "pad",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 2.2,
+        "radiusBottom": 2.4,
+        "height": 0.1,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0.05,
+        0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "hull",
+      "parent": "ship",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.45,
+        "radiusBottom": 0.7,
+        "height": 4,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 1
+      }
+    },
+    {
+      "id": "nose",
+      "parent": "ship",
+      "shape": {
+        "type": "cone",
+        "radius": 0.45,
+        "height": 1.6,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0,
+        -2.8
+      ],
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "cockpit",
+      "parent": "ship",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.4,
+        "segments": 10
+      },
+      "position": [
+        0,
+        0.4,
+        -1.3
+      ],
+      "scale": [
+        0.9,
+        0.7,
+        1.8
+      ],
+      "build": {
+        "order": 3
+      },
+      "intensity": 2
+    },
+    {
+      "id": "spine",
+      "parent": "ship",
+      "shape": {
+        "type": "box",
+        "size": [
+          0.3,
+          0.3,
+          2.6
+        ]
+      },
+      "position": [
+        0,
+        0.55,
+        0.4
+      ],
+      "build": {
+        "order": 2
+      }
+    },
+    {
+      "id": "wing_l",
+      "parent": "ship",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0.8
+          ],
+          [
+            2.8,
+            -0.6
+          ],
+          [
+            2.8,
+            -1.2
+          ],
+          [
+            0,
+            -1.6
+          ]
+        ],
+        "depth": 0.08
+      },
+      "position": [
+        -0.5,
+        -0.1,
+        0.6
+      ],
+      "rotation": [
+        90,
+        0,
+        180
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "wing_r",
+      "parent": "ship",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0.8
+          ],
+          [
+            2.8,
+            -0.6
+          ],
+          [
+            2.8,
+            -1.2
+          ],
+          [
+            0,
+            -1.6
+          ]
+        ],
+        "depth": 0.08
+      },
+      "position": [
+        0.5,
+        -0.1,
+        0.6
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 4
+      }
+    },
+    {
+      "id": "gun_l",
+      "parent": "ship",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 2,
+        "segments": 6
+      },
+      "position": [
+        -3.3,
+        -0.1,
+        0.3
+      ],
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "gun_r",
+      "parent": "ship",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.06,
+        "radiusBottom": 0.08,
+        "height": 2,
+        "segments": 6
+      },
+      "position": [
+        3.3,
+        -0.1,
+        0.3
+      ],
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "tip_l",
+      "parent": "gun_l",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.1,
+        "segments": 6
+      },
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 9
+      }
+    },
+    {
+      "id": "tip_r",
+      "parent": "gun_r",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.1,
+        "segments": 6
+      },
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 9
+      }
+    },
+    {
+      "id": "nac_l",
+      "parent": "ship",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.3,
+        "radiusBottom": 0.35,
+        "height": 2.2,
+        "segments": 8
+      },
+      "position": [
+        -1.2,
+        -0.1,
+        1
+      ],
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "nac_r",
+      "parent": "ship",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.3,
+        "radiusBottom": 0.35,
+        "height": 2.2,
+        "segments": 8
+      },
+      "position": [
+        1.2,
+        -0.1,
+        1
+      ],
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "intake_l",
+      "parent": "ship",
+      "shape": {
+        "type": "torus",
+        "radius": 0.3,
+        "tube": 0.05
+      },
+      "position": [
+        -1.2,
+        -0.1,
+        -0.1
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "intake_r",
+      "parent": "ship",
+      "shape": {
+        "type": "torus",
+        "radius": 0.3,
+        "tube": 0.05
+      },
+      "position": [
+        1.2,
+        -0.1,
+        -0.1
+      ],
+      "build": {
+        "order": 7
+      }
+    },
+    {
+      "id": "flame_l",
+      "parent": "ship",
+      "shape": {
+        "type": "cone",
+        "radius": 0.28,
+        "height": 0.9,
+        "segments": 8
+      },
+      "position": [
+        -1.2,
+        -0.1,
+        2.55
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 9
+      }
+    },
+    {
+      "id": "flame_r",
+      "parent": "ship",
+      "shape": {
+        "type": "cone",
+        "radius": 0.28,
+        "height": 0.9,
+        "segments": 8
+      },
+      "position": [
+        1.2,
+        -0.1,
+        2.55
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 9
+      }
+    },
+    {
+      "id": "engine",
+      "parent": "ship",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.6,
+        "radiusBottom": 0.5,
+        "height": 0.4,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0,
+        2.2
+      ],
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 5
+      }
+    },
+    {
+      "id": "core",
+      "parent": "ship",
+      "shape": {
+        "type": "cone",
+        "radius": 0.45,
+        "height": 1.2,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0,
+        3
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 9
+      }
+    },
+    {
+      "id": "ring",
+      "parent": "ship",
+      "shape": {
+        "type": "torus",
+        "radius": 0.75,
+        "tube": 0.05
+      },
+      "position": [
+        0,
+        0,
+        1.5
+      ],
+      "build": {
+        "order": 7
+      },
+      "intensity": 1.5
+    },
+    {
+      "id": "fin",
+      "parent": "ship",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1.4,
+            0
+          ],
+          [
+            1.6,
+            1.2
+          ],
+          [
+            1.1,
+            1.2
+          ]
+        ],
+        "depth": 0.08
+      },
+      "position": [
+        0,
+        0.6,
+        1.8
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "fin_l",
+      "parent": "ship",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1.2,
+            0.8
+          ],
+          [
+            0.8,
+            0.8
+          ]
+        ],
+        "depth": 0.06
+      },
+      "position": [
+        -0.45,
+        0,
+        1.6
+      ],
+      "rotation": [
+        0,
+        -90,
+        -45
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "fin_r",
+      "parent": "ship",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1.2,
+            0.8
+          ],
+          [
+            0.8,
+            0.8
+          ]
+        ],
+        "depth": 0.06
+      },
+      "position": [
+        0.45,
+        0,
+        1.6
+      ],
+      "rotation": [
+        0,
+        -90,
+        45
+      ],
+      "build": {
+        "order": 6
+      }
+    },
+    {
+      "id": "stripe",
+      "parent": "ship",
+      "shape": {
+        "type": "tube",
+        "points": [
+          [
+            -3,
+            -0.05,
+            0
+          ],
+          [
+            -1.5,
+            -0.05,
+            -0.4
+          ],
+          [
+            0,
+            -0.05,
+            -0.6
+          ],
+          [
+            1.5,
+            -0.05,
+            -0.4
+          ],
+          [
+            3,
+            -0.05,
+            0
+          ]
+        ],
+        "radius": 0.03
+      },
+      "position": [
+        0,
+        0,
+        0.4
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 8
+      }
+    },
+    {
+      "id": "beam",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.15,
+        "radiusBottom": 0.6,
+        "height": 1.6,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0.9,
+        0
+      ],
+      "intensity": 0.6,
+      "build": {
+        "order": 1
+      }
+    }
+  ],
+  "animations": [
+    {
+      "part": "ship",
+      "property": "position",
+      "duration": 4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            -0.1,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "ship",
+      "property": "rotation",
+      "duration": 6,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            -5
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "part": "core",
+      "property": "scale",
+      "duration": 0.6,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.1,
+            1.4,
+            1.1
+          ]
+        }
+      ]
+    },
+    {
+      "part": "ring",
+      "property": "rotation",
+      "duration": 3,
+      "loop": "repeat",
+      "easing": "linear",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0,
+            360
+          ]
+        }
+      ]
+    },
+    {
+      "part": "flame_l",
+      "property": "scale",
+      "duration": 0.5,
+      "loop": "pingpong",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1,
+            1.3,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "part": "flame_r",
+      "property": "scale",
+      "duration": 0.5,
+      "loop": "pingpong",
+      "phase": 0.5,
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1,
+            1.3,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "forge": {
+    "duration": 9
+  },
+  "id": "20261007-190602_starfang-interceptor",
+  "prompt": "a detailed spaceship"
+}

@@ -1,0 +1,392 @@
+{
+  "version": 1,
+  "title": "Emerald Rocket",
+  "forge": {
+    "duration": 7
+  },
+  "parts": [
+    {
+      "id": "pad",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 1.6,
+        "radiusBottom": 1.8,
+        "height": 0.3,
+        "segments": 8
+      },
+      "position": [
+        0,
+        0.15,
+        0
+      ],
+      "build": {
+        "order": 0
+      }
+    },
+    {
+      "id": "rocket",
+      "shape": {
+        "type": "group"
+      },
+      "position": [
+        0,
+        0.6,
+        0
+      ]
+    },
+    {
+      "id": "body",
+      "parent": "rocket",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.6,
+        "radiusBottom": 0.6,
+        "height": 3.5,
+        "segments": 16
+      },
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "build": {
+        "order": 10
+      }
+    },
+    {
+      "id": "nose",
+      "parent": "body",
+      "shape": {
+        "type": "cone",
+        "radius": 0.6,
+        "height": 1.3,
+        "segments": 16
+      },
+      "position": [
+        0,
+        2.4,
+        0
+      ],
+      "build": {
+        "order": 20
+      }
+    },
+    {
+      "id": "band",
+      "parent": "body",
+      "shape": {
+        "type": "torus",
+        "radius": 0.62,
+        "tube": 0.06
+      },
+      "position": [
+        0,
+        1.2,
+        0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "window",
+      "parent": "body",
+      "shape": {
+        "type": "sphere",
+        "radius": 0.22,
+        "segments": 10
+      },
+      "position": [
+        0,
+        0.6,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        0.4
+      ],
+      "intensity": 2,
+      "build": {
+        "order": 40
+      }
+    },
+    {
+      "id": "nozzle",
+      "parent": "body",
+      "shape": {
+        "type": "cylinder",
+        "radiusTop": 0.4,
+        "radiusBottom": 0.55,
+        "height": 0.4,
+        "segments": 12
+      },
+      "position": [
+        0,
+        -1.95,
+        0
+      ],
+      "build": {
+        "order": 30
+      }
+    },
+    {
+      "id": "flame",
+      "parent": "nozzle",
+      "shape": {
+        "type": "cone",
+        "radius": 0.4,
+        "height": 1
+      },
+      "position": [
+        0,
+        -0.7,
+        0
+      ],
+      "rotation": [
+        180,
+        0,
+        0
+      ],
+      "intensity": 3,
+      "build": {
+        "order": 50
+      }
+    },
+    {
+      "id": "fin_a",
+      "parent": "body",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.9,
+            -0.6
+          ],
+          [
+            0.9,
+            -1
+          ],
+          [
+            0,
+            -0.4
+          ]
+        ],
+        "depth": 0.08
+      },
+      "position": [
+        0.55,
+        -0.9,
+        0
+      ],
+      "build": {
+        "order": 35
+      }
+    },
+    {
+      "id": "fin_b",
+      "parent": "body",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.9,
+            -0.6
+          ],
+          [
+            0.9,
+            -1
+          ],
+          [
+            0,
+            -0.4
+          ]
+        ],
+        "depth": 0.08
+      },
+      "position": [
+        0,
+        -0.9,
+        0.55
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "build": {
+        "order": 35
+      }
+    },
+    {
+      "id": "fin_c",
+      "parent": "body",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.9,
+            -0.6
+          ],
+          [
+            0.9,
+            -1
+          ],
+          [
+            0,
+            -0.4
+          ]
+        ],
+        "depth": 0.08
+      },
+      "position": [
+        -0.55,
+        -0.9,
+        0
+      ],
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "build": {
+        "order": 35
+      }
+    },
+    {
+      "id": "fin_d",
+      "parent": "body",
+      "shape": {
+        "type": "extrude",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            0.9,
+            -0.6
+          ],
+          [
+            0.9,
+            -1
+          ],
+          [
+            0,
+            -0.4
+          ]
+        ],
+        "depth": 0.08
+      },
+      "position": [
+        0,
+        -0.9,
+        -0.55
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "build": {
+        "order": 35
+      }
+    }
+  ],
+  "animations": [
+    {
+      "part": "flame",
+      "property": "scale",
+      "duration": 0.4,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            1,
+            0.8,
+            1
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            1.1,
+            1.3,
+            1.1
+          ]
+        }
+      ]
+    },
+    {
+      "part": "rocket",
+      "property": "position",
+      "duration": 3,
+      "loop": "pingpong",
+      "easing": "sine",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            0.3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "body",
+      "property": "rotation",
+      "duration": 8,
+      "loop": "repeat",
+      "easing": "linear",
+      "keyframes": [
+        {
+          "t": 0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1,
+          "value": [
+            0,
+            360,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "20261007-191356_emerald-rocket",
+  "prompt": "a penis"
+}
